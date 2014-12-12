@@ -16,8 +16,11 @@ module.exports = function (grunt) {
             },
             scripts: {
                 files: [
-                    'assets/scripts/**/*.js',
+                    'source/scripts/**/*.js',
                 ],
+                tasks: [
+                	'browserify2:dev'
+                ]
             },
             css: {
                 files: [
@@ -59,8 +62,7 @@ module.exports = function (grunt) {
                 jshintrc: '.jshintrc'
             },
             all: [
-                'Gruntfile.js',
-                'assets/scripts/**/*.js',
+                'source/scripts/**/*.js',
                 '!assets/scripts/vendor/*',
                 'test/spec/**/*.js'
             ]
@@ -77,6 +79,13 @@ module.exports = function (grunt) {
                     script: 'app.js'
                 }
             }
+        },
+
+        browserify2: {
+        	dev: {
+        		entry: './source/scripts/main.js',
+        		compile: './assets/scripts/main.js'
+        	}
         },
 
         // Rev Config
@@ -219,7 +228,7 @@ module.exports = function (grunt) {
     // Register Tasks
     // Workon
     grunt.registerTask('workon', 'Start working on this project.', [
-        'jshint',
+    	'jshint',
         'express:dev',
         'watch'
     ]);
