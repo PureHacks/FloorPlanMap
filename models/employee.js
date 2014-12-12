@@ -6,7 +6,8 @@ var employeeSchema = mongoose.Schema({
 	jobTitle: String,
 	phoneExtension: String,
 	emailAddress: String,
-	spotlightUrl: String
+	spotlightUrl: String,
+	location: { type: mongoose.Schema.ObjectId, ref: 'Location'}
 });
 
 var Employee = mongoose.model('Employee', employeeSchema);
