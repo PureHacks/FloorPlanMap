@@ -22,10 +22,13 @@ module.exports = function (grunt) {
                 	'browserify2:dev'
                 ]
             },
-            css: {
+            less: {
                 files: [
-                    'assets/styles/**/*.css',
+                    'source/styles/**/*.less',
                 ],
+                tasks: [
+                	'less:dev'
+                ]
             },
             images: {
                 files: [
@@ -85,6 +88,14 @@ module.exports = function (grunt) {
         	dev: {
         		entry: './source/scripts/main.js',
         		compile: './assets/scripts/main.js'
+        	}
+        },
+
+        less: {
+        	dev: {
+        		files: {
+        			"assets/styles/style.css" : "source/styles/style.less"
+        		}
         	}
         },
 
