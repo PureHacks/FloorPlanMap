@@ -240,6 +240,8 @@ module.exports = function (grunt) {
     // Workon
     grunt.registerTask('workon', 'Start working on this project.', [
     	'jshint',
+    	'less:dev',
+    	'browserify2:dev',
         'express:dev',
         'watch'
     ]);

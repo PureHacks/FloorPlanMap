@@ -1,1 +1,2 @@
-console.log("HELLO WORLD!");
+var $ = require('jquery');
+console.log($);
