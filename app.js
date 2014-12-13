@@ -3,7 +3,7 @@
 /*
  * Express Dependencies
  */
-var express = require('express')
+var express = require('express');
 var app = express();
 var port = 3000;
 
@@ -12,9 +12,6 @@ var port = 3000;
  */
 var exphbs = require('express3-handlebars');
 var hbs;
-
-// For gzip compression
-app.use(express.compress());
 
 /*
  * Config for Production and Development
@@ -51,7 +48,7 @@ if (process.env.NODE_ENV === 'production') {
 // Set Handlebars
 app.set('view engine', 'handlebars');
 
-
+app.use('/api', require('routes/index'));
 
 /*
  * Routes
