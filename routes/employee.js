@@ -1,6 +1,7 @@
 var express = require('express'),
 	router = express.Router(),
-	Employee = require('models/employee');
+	Employee = require('models/employee'),
+	Locations = require('models/location');
 
 
 router.post('/', function(req, res, next){
@@ -24,7 +25,7 @@ router.post('/', function(req, res, next){
 });
 
 router.get('/', function(req, res, next){
-	Employee.find({}).populate("Location").exec(function(err, employees){
+	Employee.find({}).populate("location").exec(function(err, employees){
 		if(err) {
 			res.sendStatus(404);
 			return false;
@@ -34,7 +35,7 @@ router.get('/', function(req, res, next){
 });
 
 router.get('/:slug', function(req, res, next){
-	Employee.findOne({ slug: req.params.slug }).populate("Location").exec(function(err, employee){
+	Employee.find({ slug: req.params.slug }).populate("location").exec(function(err, employee){
 		if(err) {
 			res.sendStatus(404);
 			return false;
@@ -80,6 +81,42 @@ router.delete('/:slug', function(req, res, next){
 			res.status(200).send({ error: "Could not find element." });
 		}
 		
+	});
+});
+
+router.post('/:slug/assign/:locationId', function(req, res, next){
+	Employee.findOne({ slug: req.params.slug }, function(err, employee){
+		if(err) {
+			res.status(404).send();
+			return false;
+		}
+		if(employee != null){
+			Locations.findById(req.params.locationId, function(err, loc){
+				employee.location = loc._id;
+				employee.save(function(err){
+					res.status(200).send(employee);
+				});
+			});
+		} else {
+			res.status(404).send();
+		}
+	});
+});
+
+router.post('/:slug/unassign/', function(req, res, next){
+	Employee.findOne({ slug: req.params.slug }, function(err, employee){
+		if(err) {
+			res.status(404).send();
+			return false;
+		}
+		if(employee != null){
+			employee.location = undefined;
+			employee.save(function(err){
+				res.status(200).send(employee);
+			});
+		} else {
+			res.status(404).send();
+		}
 	});
 });
 

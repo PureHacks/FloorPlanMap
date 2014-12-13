@@ -2,10 +2,7 @@ var mongoose = require('../env/mongoose.js');
 
 var locationSchema = mongoose.Schema({
 	type: String,
-	location: {
-		x: String,
-		y: String
-	}
+	location: String
 });
 
 var LocationItem = mongoose.model('Location', locationSchema);
