@@ -43,6 +43,24 @@ router.get('/:slug', function(req, res, next){
 	});
 });
 
+router.put('/:slug', function(req, res, next){
+	Employee.findOne({ slug: req.params.slug }, function(err, employee){
+		if(err || employee == null) {
+			res.status(404).send({error: "Not found"});
+			return false;
+		} 
+
+		for(var key in req.body){
+			employee[key] = req.body[key];
+		}
+
+		employee.save(function(err){
+			res.status(200).send(employee);
+		});
+
+	});
+});
+
 router.delete('/:slug', function(req, res, next){
 	Employee.findOne({ slug: req.params.slug }, function(err, employee){
 		if(err) {
