@@ -5,16 +5,14 @@
  */
 var express = require('express');
 var app = express();
+var bodyParser = require('body-parser');
 var port = 3000;
 
 /*
  * Use Handlebars for templating
  */
-var exphbs = require('express3-handlebars');
+var exphbs = require('express-handlebars');
 var hbs;
-
-// For gzip compression
-app.use(express.compress());
 
 /*
  * Config for Production and Development
@@ -50,8 +48,20 @@ if (process.env.NODE_ENV === 'production') {
 
 // Set Handlebars
 app.set('view engine', 'handlebars');
+app.use(bodyParser.urlencoded({ extended: true }));
 
+/*
+ * Route logging
+ */
+app.use(function(req, res, next) {
+  console.log('%s %s', req.method, req.url);
+  next();
+});
 
+/*
+ * Apis
+ */
+app.use('/api', require('./routes/index.js'));
 
 /*
  * Routes
