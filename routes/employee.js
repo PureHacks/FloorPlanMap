@@ -33,8 +33,8 @@ router.get('/', function(req, res, next){
 	});
 });
 
-router.get('/:firstName', function(req, res, next){
-	Employee.findOne({ firstName: req.params.firstName }).populate("Location").exec(function(err, employee){
+router.get('/:slug', function(req, res, next){
+	Employee.findOne({ slug: req.params.slug }).populate("Location").exec(function(err, employee){
 		if(err) {
 			res.sendStatus(404);
 			return false;
@@ -43,8 +43,8 @@ router.get('/:firstName', function(req, res, next){
 	});
 });
 
-router.delete('/:firstName', function(req, res, next){
-	Employee.findOne({ firstName: req.params.firstName }).exec(function(err, employee){
+router.delete('/:slug', function(req, res, next){
+	Employee.findOne({ slug: req.params.slug }, function(err, employee){
 		if(err) {
 			res.status(404).send();
 			return false;
