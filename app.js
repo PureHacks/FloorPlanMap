@@ -11,7 +11,7 @@ var port = 3000;
 /*
  * Use Handlebars for templating
  */
-var exphbs = require('express3-handlebars');
+var exphbs = require('express-handlebars');
 var hbs;
 
 /*
