@@ -1,6 +1,6 @@
 var express = require('express'),
 	router = express.Router(),
-	Locations = require('models/location');
+	Locations = require('../models/location.js');
 
 
 router.post('/', function(req, res, next){

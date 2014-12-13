@@ -61,7 +61,7 @@ app.use(function(req, res, next) {
 /*
  * Apis
  */
-app.use('/api', require('routes/index'));
+app.use('/api', require('./routes/index.js'));
 
 /*
  * Routes
