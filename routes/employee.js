@@ -14,7 +14,10 @@ router.post('/', function(req, res, next){
 	})
 
 	employee.save(function(err){
-		if(err) res.sendStatus(404);
+		if(err) {
+			res.status(404).send({error: "Something went wrong!"});
+			return false;
+		}
 		res.sendStatus(200);
 	});
 	
@@ -22,14 +25,20 @@ router.post('/', function(req, res, next){
 
 router.get('/', function(req, res, next){
 	Employee.find({}).populate("Location").exec(function(err, employees){
-		if(err) res.sendStatus(404);
+		if(err) {
+			res.sendStatus(404);
+			return false;
+		}
 		res.status(200).send(employees);
 	});
 });
 
 router.get('/:firstName', function(req, res, next){
 	Employee.findOne({ firstName: req.params.firstName }).populate("Location").exec(function(err, employee){
-		if(err) res.sendStatus(404);
+		if(err) {
+			res.sendStatus(404);
+			return false;
+		}
 		res.status(200).send(employee);
 	});
 });
@@ -42,7 +51,10 @@ router.delete('/:firstName', function(req, res, next){
 		}
 		if(employee != null){
 			employee.remove(function(err){
-				if(err) res.sendStatus(404);
+				if(err) {
+					res.sendStatus(404);
+					return false;
+				}
 				res.status(200).send({ sucess: "Employee deleted." });
 			});
 			
