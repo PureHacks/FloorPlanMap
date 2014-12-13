@@ -5,6 +5,7 @@
  */
 var express = require('express');
 var app = express();
+var bodyParser = require('body-parser');
 var port = 3000;
 
 /*
@@ -47,7 +48,11 @@ if (process.env.NODE_ENV === 'production') {
 
 // Set Handlebars
 app.set('view engine', 'handlebars');
+app.use(bodyParser.urlencoded({ extended: true }));
 
+/*
+ * Apis
+ */
 app.use('/api', require('routes/index'));
 
 /*
