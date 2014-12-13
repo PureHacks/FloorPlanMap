@@ -51,6 +51,14 @@ app.set('view engine', 'handlebars');
 app.use(bodyParser.urlencoded({ extended: true }));
 
 /*
+ * Route logging
+ */
+app.use(function(req, res, next) {
+  console.log('%s %s', req.method, req.url);
+  next();
+});
+
+/*
  * Apis
  */
 app.use('/api', require('routes/index'));
