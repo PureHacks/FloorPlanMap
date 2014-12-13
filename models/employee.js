@@ -19,7 +19,7 @@ var employeeSchema = mongoose.Schema({
 	emailAddress: String,
 	spotlightUrl: String,
 	slug: { type: String, unique: true },
-	location: { type: mongoose.Schema.ObjectId, ref: 'Location'}
+	location: { type: mongoose.Schema.ObjectId, ref: 'poi'}
 });
 
 employeeSchema.pre('save', function(next){

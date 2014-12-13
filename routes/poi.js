@@ -1,15 +1,15 @@
 var express = require('express'),
 	router = express.Router(),
-	Locations = require('../models/location.js');
+	Poi = require('../models/poi.js');
 
 
 router.post('/', function(req, res, next){
-	var location = new Locations({
+	var item = new Poi({
 		type: req.body.type,
-		location: req.body.coordinates
+		coordinates: req.body.coordinates
 	});
 
-	location.save(function(err){
+	item.save(function(err){
 		if(err) {
 			res.status(404).send({error: "Something went wrong!"});
 			return false;
@@ -20,56 +20,56 @@ router.post('/', function(req, res, next){
 });
 
 router.get('/', function(req, res, next){
-	Locations.find({}).exec(function(err, locations){
+	Poi.find({}).exec(function(err, item){
 		if(err) {
 			res.sendStatus(404);
 			return false;
 		}
-		res.status(200).send(locations);
+		res.status(200).send(item);
 	});
 });
 
 router.get('/:id', function(req, res, next){
-	Locations.findById(req.params.id, function(err, locations){
+	Poi.findById(req.params.id, function(err, items){
 		if(err) {
 			res.sendStatus(404);
 			return false;
 		}
-		res.status(200).send(locations);
+		res.status(200).send(items);
 	});
 });
 
 router.put('/:id', function(req, res, next){
-	Locations.findOne(req.params.id, function(err, locations){
-		if(err || locations == null) {
+	Poi.findOne(req.params.id, function(err, items){
+		if(err || items == null) {
 			res.status(404).send({error: "Not found"});
 			return false;
 		} 
 
 		for(var key in req.body){
-			locations[key] = req.body[key];
+			items[key] = req.body[key];
 		}
 
-		locations.save(function(err){
-			res.status(200).send(locations);
+		items.save(function(err){
+			res.status(200).send(items);
 		});
 
 	});
 });
 
 router.delete('/:id', function(req, res, next){
-	Locations.findOne(req.params.id, function(err, locations){
+	Poi.findOne(req.params.id, function(err, item){
 		if(err) {
 			res.status(404).send();
 			return false;
 		}
-		if(locations != null){
-			locations.remove(function(err){
+		if(item != null){
+			Item.remove(function(err){
 				if(err) {
 					res.sendStatus(404);
 					return false;
 				}
-				res.status(200).send({ sucess: "Locations deleted." });
+				res.status(200).send({ sucess: "Item deleted." });
 			});
 			
 		} else {

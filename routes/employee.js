@@ -1,7 +1,7 @@
 var express = require('express'),
 	router = express.Router(),
 	Employee = require('../models/employee.js'),
-	Locations = require('../models/location.js');
+	Locations = require('../models/poi.js');
 
 
 router.post('/', function(req, res, next){
