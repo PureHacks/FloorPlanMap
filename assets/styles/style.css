@@ -6288,3 +6288,27 @@ button.close {
 img {
   width: 100%;
 }
+#main-page {
+  margin-top: 100px;
+}
+#main-page .search-area {
+  text-align: center;
+}
+#main-page .search-area p {
+  padding: 30px 0 0;
+}
+#main-page .search-area .tagline {
+  font-size: 2em;
+}
+#main-page .search-area .bottom-notes {
+  font-size: 1.2em;
+}
+#map-page {
+  margin-top: 10px;
+}
+#map-page .search-area {
+  top: 10px;
+}
+#map-page .side-area {
+  top: 15px;
+}
