@@ -6,6 +6,7 @@
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
+//var $ = require('jquery');
 var port = 3000;
 
 /*
@@ -68,9 +69,28 @@ app.use('/api', require('./routes/index.js'));
  */
 // Index Page
 app.get('/', function(request, response, next) {
-    response.render('index');
+	response.render('index');
 });
 
+app.get('/seats/:action', function(request, response, next) {
+	if (request.param.action === 'search') {
+		next();
+	}
+	else {
+		response.render('seats-browse', {
+			pageType: 'browse',
+			layout: 'map'
+		});
+	}
+});
+
+app.get('/seats/search/:searchTerm', function(request, response, next) {
+	response.render('seats-search', {
+		pageType: 'search',
+		searchTerm: request.params.searchTerm,
+		layout: 'map'
+	});
+});
 
 /*
  * Start it up

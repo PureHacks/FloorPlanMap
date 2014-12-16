@@ -15,8 +15,8 @@
     "node": true,
     "strict": true,
     "trailing": true,
-    "quotmark": "single",
+    "quotmark": "true",
     "undef": true,
-    "unused": true,
-    "white": true
+    "unused": true
+    //"white": true
 }
