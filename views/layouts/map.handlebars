@@ -20,24 +20,24 @@
         <![endif]-->
 
         <header class="container-fluid">						
-					<div class="row header-area">
+					<div class="header-area row">
 						
-						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 brand-area">
+						<div class="brand-area col-lg-3 col-md-3 col-sm-3 col-xs-12">
 							<a href="/" class="brand">
 								<img src="/logo-nurun.svg" alt="Nurun logo" onerror="this.onerror=null; this.src='/logo-nurun.png'" />
 							</a>
 						</div>
 						
-						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 search-area">
+						<div class="search-area col-lg-6 col-md-6 col-sm-6 col-xs-12">
 							<div class="input-group">
 								<input type="text" class="form-control" id="search-term" name="search-term" placeholder="Enter a name, role, or client project" value="{{searchTerm}}">
 								<span class="input-group-btn">
-									<button type="submit" class="btn btn-success find-seat">Find Them</button>
+									<button type="submit" class="find-seat btn btn-success">Find Them</button>
 								</span>
 							</div>
 						</div>
 						
-						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 side-area">
+						<div class="side-area col-lg-3 col-md-3 col-sm-3 col-xs-12">
 						{{#if searchTerm}}
 						<a href="/seats/browse">Explore Nurun</a>
 						{{/if}}

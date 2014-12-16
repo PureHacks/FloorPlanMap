@@ -8,7 +8,6 @@
     "eqnull": true,
     "immed": true,
     "indent": 4,
-		"jquery": true,
     "latedef": true,
     "maxlen": 180,
     "maxstatements": 20,
