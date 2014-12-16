@@ -1,5 +1,5 @@
 'use strict';
-//var $ = require('jquery');
+var $ = require('jquery');
 
 var digitalSeatingPlan = (function() {
 
