@@ -1,4 +1,5 @@
-var mongoose = require('../env/mongoose.js');
+var mongoose = require('../env/mongoose.js'),
+	textSearch = require('mongoose-text-search');
 
 
 // borrowed from http://blog.benmcmahen.com/post/41122888102/creating-slugs-for-your-blog-using-express-js-and
@@ -19,7 +20,14 @@ var employeeSchema = mongoose.Schema({
 	emailAddress: String,
 	spotlightUrl: String,
 	slug: { type: String, unique: true },
-	location: { type: mongoose.Schema.ObjectId, ref: 'poi'}
+	location: { type: mongoose.Schema.ObjectId, ref: 'poi'},
+});
+
+employeeSchema.plugin(textSearch);
+employeeSchema.index({ 
+	firstName: 'text',
+	lastName: 'text',
+	jobTitle: 'text'
 });
 
 employeeSchema.pre('save', function(next){

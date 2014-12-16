@@ -45,6 +45,26 @@ READ	- GET		/api/poi/{id}
 UPDATE	- PUT		/api/poi/{id} with x-www-form-urlencode
 DELETE	- DELETE	/api/poi/{id}
 
+
+#### Search
+
+##### Model
+
+{
+    "results": [
+        {
+            "score": 1.1,
+            "obj": {
+            }
+        }
+    ],
+    "items": 1
+}
+
+##### Routes
+
+READ    - GET       /api/search/{term}
+
 ### Development
 1. Install [GIT](http://git-scm.com/downloads)
 2. Get everything from GIT
