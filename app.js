@@ -71,6 +71,16 @@ app.get('/', function(request, response, next) {
     response.render('index');
 });
 
+app.post('/seating-plan', function(request, response, next) {
+    response.render('seating-plan', {
+			searchTerm: request.body['search-term'],
+			layout: 'map'
+		});
+});
+
+app.post('/search-results', function(request, response, next) {
+    response.render('search-results');
+});
 
 /*
  * Start it up

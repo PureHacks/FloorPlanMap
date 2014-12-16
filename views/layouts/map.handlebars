@@ -6,31 +6,50 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Digital Seating Plan</title>
+        <title>DSP - Maps</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <!-- build:css(assets) styles/screen.css -->
+        <!-- build:css(assets) /styles/screen.css -->
         <link rel="stylesheet" href="/styles/style.css">
         <!-- endbuild -->
     </head>
-    <body id="main-page">
+    <body id="map-page">
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <header>
-					<!-- Header Content -->
+        <header class="container-fluid">						
+					<div class="row header-area">
+						
+						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 brand-area">
+							<a href="/" class="brand">
+								<img src="/logo-nurun.svg" alt="Nurun logo" onerror="this.onerror=null; this.src='/logo-nurun.png'" />
+							</a>
+						</div>
+						
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 search-area">
+							<div class="input-group">
+								<input type="text" class="form-control" id="search-term" name="search-term" placeholder="Enter a name, role, or client project" value="{{searchTerm}}">
+								<span class="input-group-btn">
+									<button type="submit" class="btn btn-success find-seat">Find Them</button>
+								</span>
+							</div>
+						</div>
+						
+						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 side-area">
+						{{#if searchTerm}}
+						<a href="/seats/browse">Explore Nurun</a>
+						{{/if}}
+						</div>
+						
+					</div>
         </header>
 
         {{{ body }}}
 
-        <footer>
-          <!-- Footer Content -->
-        </footer>
-				
 				<script type="text/javascript" src="/scripts/jquery-2.1.1.min.js"></script>
-        <!-- build:js(assets) scripts/main.js -->
+        <!-- build:js(assets) /scripts/main.js -->
         <script type="text/javascript" src="/scripts/main.js"></script>
         <!-- endbuild -->
 
