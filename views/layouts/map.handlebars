@@ -39,7 +39,7 @@
 						
 						<div class="side-area col-lg-3 col-md-3 col-sm-3 col-xs-12">
 						{{#if searchTerm}}
-						<a href="/seats/browse">Explore Nurun</a>
+						<a class="btn btn-default" href="/seats/browse/9">9th Floor</a> <a class="btn btn-default" href="/seats/browse/8">8th Floor</a>
 						{{/if}}
 						</div>
 						
@@ -49,6 +49,7 @@
         {{{ body }}}
 
         <!-- build:js(assets) /scripts/main.js -->
+				<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
         <script type="text/javascript" src="/scripts/main.js"></script>
         <!-- endbuild -->
 

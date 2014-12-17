@@ -6306,9 +6306,22 @@ img {
 #map-page {
   margin-top: 10px;
 }
-#map-page .search-area {
-  top: 10px;
+#map-page .seats-browse,
+#map-page .seats-search {
+  margin-top: 15px;
+  border-top: 1px solid #ccc;
 }
+#map-page .search-area,
 #map-page .side-area {
-  top: 15px;
+  padding-top: 1.5%;
+}
+#seating-map {
+  min-height: 600px;
+}
+#admin-page .brand {
+  padding: 10px 20px;
+}
+#admin-page .brand img {
+  width: auto;
+  height: 30px;
 }

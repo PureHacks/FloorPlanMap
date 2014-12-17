@@ -72,23 +72,72 @@ app.get('/', function(request, response, next) {
 	response.render('index');
 });
 
-app.get('/seats/:action', function(request, response, next) {
-	if (request.param.action === 'search') {
+app.get('/seats', function(request, response, next) {
+	next();
+});
+
+app.get('/seats/browse/:floor', function(request, response, next) {
+	
+	var floor = request.params.floor || '9';	// default to 9th floor
+	
+	response.render('seats-browse', {
+		pageType: 'browse',
+		floor: floor,
+		layout: 'map'
+	});
+});
+
+app.get('/seats/search/:searchTerm', function(request, response, next) {
+	
+	var searchTerm = request.params.searchTerm || 'reception';
+	
+	response.render('seats-search', {
+		pageType: 'search',
+		searchTerm: searchTerm,
+		layout: 'map'
+	});
+});
+
+
+app.get('/admin/employee/:adminAction?', function(request, response, next) {
+	
+	var adminAction = request.params.adminAction || 'add';
+	
+	if (adminAction === 'edit')
+	{
 		next();
+		return;
 	}
-	else {
-		response.render('seats-browse', {
-			pageType: 'browse',
-			layout: 'map'
+	else
+	{		
+		response.render('admin-employee', {
+			pageType: 'admin-employee-add',
+			adminAction: 'add',
+			layout: 'admin'
 		});
 	}
 });
 
-app.get('/seats/search/:searchTerm', function(request, response, next) {
-	response.render('seats-search', {
-		pageType: 'search',
-		searchTerm: request.params.searchTerm,
-		layout: 'map'
+app.get('/admin/employee/edit/:employeeName?', function(request, response, next) {
+	
+	var employeeName = request.params.employeeName || '';
+	
+	response.render('admin-employee', {
+		pageType: 'admin-employee-edit',
+		adminAction: 'edit',
+		employeeName: employeeName,
+		layout: 'admin'
+	});
+});
+
+app.get('/admin/desks/:deskId?', function(request, response, next) {
+	
+	var deskId = request.params.deskId || '';
+	
+	response.render('admin-desks', {
+		pageType: 'admin-desks',
+		deskId: deskId,
+		layout: 'admin'
 	});
 });
 
