@@ -9,31 +9,31 @@ var isMapPage = typeof google !== "undefined";
 var mapUI = isMapPage ? (function() {
 	
 	var MAP_CONTAINER_ID = "seating-map";
-	var MAP_IMAGE_PREFIX = "2014-";
+	var MAP_IMAGE_DIR = "/map-tiles/";
+	var MAP_TILE_SIZE = {
+		"floor-8" : [295, 342],
+		"floor-9" : [303, 359]
+	};
 	
 	var getFloor = function() {
 		// get floor from URL, default to 9th floor
 		return (/browse\/8/).test(window.location.href) ? "8" : "9";
 	};
 	
-	// Normalizes the coords that tiles repeat across the x axis (horizontally)
-	// like the standard Google map tiles.
 	var getNormalizedCoord = function(coord, zoom) {
 		var y = coord.y;
 		var x = coord.x;
 		
-		// tile range in one direction range is dependent on zoom level
-		// 0 = 1 tile, 1 = 2 tiles, 2 = 4 tiles, 3 = 8 tiles, etc
-		var tileRange = 0 << zoom;
+		// zoom 0 = 1x1 tile; zoom 1 = 2x2 tiles; zoom 2 = 3x3 tiles
+		var tileRange = zoom + 1;
 		
 		// don't repeat across y-axis (vertically)
 		if (y < 0 || y >= tileRange) {
 			return null;
 		}
 		
-		// repeat across x-axis
+		// don't repeat across x-axis (horizontally)
 		if (x < 0 || x >= tileRange) {
-			//x = (x % tileRange + tileRange) % tileRange;
 			return null;
 		}
 		
@@ -49,7 +49,7 @@ var mapUI = isMapPage ? (function() {
 		var mapTypeId = floor + 'th-floor';
 		var mapOptions = {
 			center: myLatlng,
-			zoom: 1,
+			zoom: 0,
 			streetViewControl: false,
 			mapTypeControlOptions: {
 				mapTypeIds: [mapTypeId]
@@ -62,15 +62,14 @@ var mapUI = isMapPage ? (function() {
 				if (!normalizedCoord) {
 					return null;
 				}
-				//var bound = Math.pow(2, zoom);
-				return MAP_IMAGE_PREFIX + mapTypeId + '.png';
-//				+
-//				'/' + zoom + '/' + normalizedCoord.x + '/' +
-//				(bound - normalizedCoord.y - 1) + '.png';
+				
+				//console.log("****** zoom=",zoom," normalizedCoord=<",normalizedCoord.x,",",normalizedCoord.y,">");
+				return MAP_IMAGE_DIR + floor + 'th_' + zoom + '_' + normalizedCoord.x + '_' +
+				normalizedCoord.y + '.png';
 			},
-			tileSize: new google.maps.Size(591, 684),
+			tileSize: new google.maps.Size(MAP_TILE_SIZE["floor-"+floor][0], MAP_TILE_SIZE["floor-"+floor][1]),
 			isPng: true,
-			maxZoom: 1,
+			maxZoom: 2,
 			minZoom: 0,
 			name: mapTypeId
 		};
@@ -92,7 +91,7 @@ var mapUI = isMapPage ? (function() {
 	};
 })() : {};
 
-var seatingPlanApp = (function() {
+var officeConciergeApp = (function() {
 
 	var bindSearchEvent = function() {
 		$(".search-area").find(".find-seat").on("click", function() {
@@ -113,7 +112,7 @@ var seatingPlanApp = (function() {
 })();
 
 $(document).ready(function(){
-	seatingPlanApp.init();
+	officeConciergeApp.init();
 	
 	if (isMapPage) {
 		mapUI.renderSeatingMap();

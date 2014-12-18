@@ -83,7 +83,12 @@ app.get('/seats/browse/:floor', function(request, response, next) {
 	response.render('seats-browse', {
 		pageType: 'browse',
 		floor: floor,
-		layout: 'map'
+		layout: 'map',
+		helpers: {
+			isOn8thFloor : function() {
+				return floor === '8';
+			}
+		}
 	});
 });
 
@@ -140,6 +145,7 @@ app.get('/admin/desks/:deskId?', function(request, response, next) {
 		layout: 'admin'
 	});
 });
+
 
 /*
  * Start it up
