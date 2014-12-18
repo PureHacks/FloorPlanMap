@@ -44,7 +44,7 @@ router.get('/:slug', function(req, res, next){
 	});
 });
 
-router.put('/:slug', function(req, res, next){
+router.post('/:slug', function(req, res, next){
 	Employee.findOne({ slug: req.params.slug }, function(err, employee){
 		if(err || employee == null) {
 			res.status(404).send({error: "Not found"});

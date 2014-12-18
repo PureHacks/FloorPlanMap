@@ -135,12 +135,18 @@ app.get('/admin/employee/:adminAction?', function(request, response, next) {
 app.get('/admin/employee/edit/:employeeName?', function(request, response, next) {
 	
 	var employeeName = request.params.employeeName || '';
-	
-	response.render('admin-employee', {
-		pageType: 'admin-employee-edit',
-		adminAction: 'edit',
-		employeeName: employeeName,
-		layout: 'admin'
+
+	Employee.findOne({slug: request.params.employeeName}).exec(function(err, employee){
+		if(err){
+			response.status(404);
+		} else {
+			response.render('admin-employee', {
+				pageType: 'admin-employee-edit',
+				adminAction: 'edit',
+				employeeName: employee,
+				layout: 'admin'
+			});
+		}
 	});
 });
 

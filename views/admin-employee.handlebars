@@ -5,27 +5,27 @@
 			<div class="edit-employee panel panel-default">
 				<div class="panel-heading">Edit Employee Info</div>
 				<div class="panel-body">
-					<form role="form" action="/api/employee/" method="POST" enctype="application/x-www-form-urlencoded">
-						
+						<form role="form" action="/api/employee/{{employeeName.slug}}" method="POST" enctype="application/x-www-form-urlencoded">
+					
 						<div class="form-group">
 							<label for="first-name">Firstname</label>
-							<input type="text" class="form-control" id="first-name" placeholder="Tim" name="firstName">
+							<input type="text" class="form-control" id="first-name" placeholder="Tim" name="firstName" value="{{employeeName.firstName}}">
 						</div>
 						<div class="form-group">
 							<label for="last-name">Lastname</label>
-							<input type="text" class="form-control" id="last-name" placeholder="Ludikar" name="lastName">
+							<input type="text" class="form-control" id="last-name" placeholder="Ludikar" name="lastName" value="{{employeeName.lastName}}">
 						</div>
 						<div class="form-group">
 							<label for="email-address">Email Address</label>
-							<input type="text" class="form-control" id="email-address" placeholder="tim.ludikar@nurun.com" name="emailAddress">
+							<input type="text" class="form-control" id="email-address" placeholder="tim.ludikar@nurun.com" name="emailAddress" value="{{employeeName.emailAddress}}">
 						</div>
 						<div class="form-group">
 							<label for="phone-extension">Phone Extension</label>
-							<input type="text" class="form-control" id="phone-extension" placeholder="16000" name="phoneExtension">
+							<input type="text" class="form-control" id="phone-extension" placeholder="16000" name="phoneExtension" value="{{employeeName.phoneExtension}}">
 						</div>
 						<div class="form-group">
 							<label for="job-title">Job Title</label>
-							<input type="text" class="form-control" id="job-title" placeholder="CEO" name="jobTitle">
+							<input type="text" class="form-control" id="job-title" placeholder="CEO" name="jobTitle" value="{{employeeName.jobTitle}}">
 						</div>
 						<div class="form-group">
 							<label for="clients">Clients</label>
@@ -33,10 +33,12 @@
 						</div>
 						<div class="form-group">
 							<label for="spotlight-url">Spotlight URL</label>
-							<input type="text" class="form-control" id="spotlight-url" placeholder="https://wiki.tor.nurun.com/display/NT/Tim+Ludikar" name="spotlightUrl">
+							<input type="text" class="form-control" id="spotlight-url" placeholder="https://wiki.tor.nurun.com/display/NT/Tim+Ludikar" name="spotlightUrl" value="{{employeeName.spotlightUrl}}">
 						</div>
-						
 						<button type="submit" class="btn btn-success">Submit</button>
+						{{#if employeeName}}
+						<button type="delete" class="btn btn-danger">Remove</button>
+						{{/if}}
 					</form>
 				</div>
 			</div>
