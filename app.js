@@ -15,6 +15,8 @@ var port = 3000;
 var exphbs = require('express-handlebars');
 var hbs;
 
+var Employee = require('./models/employee');
+
 /*
  * Config for Production and Development
  */
@@ -114,11 +116,18 @@ app.get('/admin/employee/:adminAction?', function(request, response, next) {
 		return;
 	}
 	else
-	{		
-		response.render('admin-employee', {
-			pageType: 'admin-employee-add',
-			adminAction: 'add',
-			layout: 'admin'
+	{	
+		Employee.find({}).exec(function(err, employees){
+			if(err){
+				response.status(404);
+			} else {
+				response.render('admin-employee', {
+					employees: employees,
+					pageType: 'admin-employee-add',
+					adminAction: 'add',
+					layout: 'admin'
+				});
+			}
 		});
 	}
 });
