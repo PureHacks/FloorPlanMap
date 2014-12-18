@@ -19,7 +19,7 @@ module.exports = function (grunt) {
                     'source/scripts/**/*.js',
                 ],
                 tasks: [
-                	'browserify2:dev'
+                	'browserify:dev'
                 ]
             },
             less: {
@@ -84,13 +84,15 @@ module.exports = function (grunt) {
             }
         },
 
-        browserify2: {
+        browserify: {
         	dev: {
-        		entry: './source/scripts/main.js',
-        		compile: './assets/scripts/main.js'
+        		files: {
+        			'./assets/scripts/main.js': ['./source/scripts/main.js'],
+        			'./assets/scripts/admin.js': ['./source/scripts/admin.js']
+        		}
         	}
         },
-
+        
         less: {
         	dev: {
         		files: {
@@ -241,7 +243,7 @@ module.exports = function (grunt) {
     grunt.registerTask('workon', 'Start working on this project.', [
     	'jshint',
     	'less:dev',
-    	'browserify2:dev',
+    	'browserify:dev',
         'express:dev',
         'watch'
     ]);
