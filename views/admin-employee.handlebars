@@ -9,23 +9,23 @@
 					
 						<div class="form-group">
 							<label for="first-name">Firstname</label>
-							<input type="text" class="form-control" id="first-name" placeholder="Tim" name="firstName" value="{{employeeName.firstName}}">
+							<input type="text" class="form-control" id="first-name" name="firstName" data-bind="value: selected().firstName">
 						</div>
 						<div class="form-group">
 							<label for="last-name">Lastname</label>
-							<input type="text" class="form-control" id="last-name" placeholder="Ludikar" name="lastName" value="{{employeeName.lastName}}">
+							<input type="text" class="form-control" id="last-name" placeholder="Ludikar" name="lastName" data-bind="value: selected().lastName">
 						</div>
 						<div class="form-group">
 							<label for="email-address">Email Address</label>
-							<input type="text" class="form-control" id="email-address" placeholder="tim.ludikar@nurun.com" name="emailAddress" value="{{employeeName.emailAddress}}">
+							<input type="text" class="form-control" id="email-address" placeholder="tim.ludikar@nurun.com" name="emailAddress" data-bind="value: selected().emailAddress">
 						</div>
 						<div class="form-group">
 							<label for="phone-extension">Phone Extension</label>
-							<input type="text" class="form-control" id="phone-extension" placeholder="16000" name="phoneExtension" value="{{employeeName.phoneExtension}}">
+							<input type="text" class="form-control" id="phone-extension" placeholder="16000" name="phoneExtension" data-bind="value: selected().phoneExtension">
 						</div>
 						<div class="form-group">
 							<label for="job-title">Job Title</label>
-							<input type="text" class="form-control" id="job-title" placeholder="CEO" name="jobTitle" value="{{employeeName.jobTitle}}">
+							<input type="text" class="form-control" id="job-title" placeholder="CEO" name="jobTitle" data-bind="value: selected().jobTitle">
 						</div>
 						<div class="form-group">
 							<label for="clients">Clients</label>
@@ -33,12 +33,15 @@
 						</div>
 						<div class="form-group">
 							<label for="spotlight-url">Spotlight URL</label>
-							<input type="text" class="form-control" id="spotlight-url" placeholder="https://wiki.tor.nurun.com/display/NT/Tim+Ludikar" name="spotlightUrl" value="{{employeeName.spotlightUrl}}">
+							<input type="text" class="form-control" id="spotlight-url" placeholder="https://wiki.tor.nurun.com/display/NT/Tim+Ludikar" name="spotlightUrl" data-bind="value: selected().spotlightUrl">
 						</div>
-						<button type="submit" class="btn btn-success">Submit</button>
-						{{#if employeeName}}
-						<button type="delete" class="btn btn-danger">Remove</button>
-						{{/if}}
+						<!-- ko if: !selected().slug -->
+						<button type="submit" class="btn btn-success" data-bind="click: save">Submit</button>
+						<!-- /ko -->
+						<!-- ko if: selected().slug -->
+						<button type="update" class="btn btn-success" data-bind="click: updateEmployee">Update</button>
+						<button type="delete" class="btn btn-danger" data-bind="click: removeEmployee">Remove</button>
+						<!-- /ko -->
 					</form>
 				</div>
 			</div>

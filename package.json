@@ -11,6 +11,8 @@
     "q": "^1.1.2"
   },
   "devDependencies": {
+    "browserify": "^7.0.2",
+    "browserify-shim": "^3.8.1",
     "grunt": "~0.4.1",
     "grunt-browserify": "^3.2.1",
     "grunt-concurrent": "~0.3.0",
@@ -36,5 +38,13 @@
   "engines": {
     "node": ">=0.8.0",
     "npm": "1.2.x"
+  },
+  "browser": {
+    "knockout": "./source/scripts/lib/knockout.js",
+    "jquery": "./source/scripts/lib/jquery.js"
+  },
+  "browserify-shim": {
+    "jquery": "$",
+    "knockout": { "depends": "jquery", "exports": "ko" }
   }
 }

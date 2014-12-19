@@ -12,14 +12,14 @@ router.post('/', function(req, res, next){
 		phoneExtension: req.body.phoneExtension,
 		emailAddress: req.body.emailAddress,
 		spotlightUrl: req.body.spotlightUrl,
-	})
+	});
 
 	employee.save(function(err){
 		if(err) {
 			res.status(404).send({error: "Something went wrong!"});
 			return false;
 		}
-		res.sendStatus(200);
+		res.status(200).send(employee);
 	});
 	
 });

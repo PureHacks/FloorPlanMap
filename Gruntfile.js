@@ -4,6 +4,7 @@ module.exports = function (grunt) {
     // show elapsed time at the end
     require('time-grunt')(grunt);
     // load all grunt tasks
+    var shim = require('browserify-shim');
     require('load-grunt-tasks')(grunt);
 
     grunt.initConfig({
@@ -86,6 +87,24 @@ module.exports = function (grunt) {
 
         browserify: {
         	dev: {
+        		options: {
+        			preBundleCB: function(b){
+        				b.transform({global: true}, shim);
+        				// shim(b, {
+        				// 	jquery: {
+      						// 	path: './source/scripts/lib/jquery.js',
+      						// 	exports: '$'
+        				// 	},
+        				// 	'knockout': {
+        				// 		path: './lib/knockout.js',
+        				// 		exports: 'ko',
+        				// 		depends: {
+        				// 			jquery: '$'
+        				// 		}
+        				// 	}
+        				// });
+        			}
+        		},
         		files: {
         			'./assets/scripts/main.js': ['./source/scripts/main.js'],
         			'./assets/scripts/admin.js': ['./source/scripts/admin.js']
@@ -241,7 +260,7 @@ module.exports = function (grunt) {
     // Register Tasks
     // Workon
     grunt.registerTask('workon', 'Start working on this project.', [
-    	'jshint',
+    	// 'jshint',
     	'less:dev',
     	'browserify:dev',
         'express:dev',
