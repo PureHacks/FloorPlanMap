@@ -1,6 +1,6 @@
 ﻿$axure.loadCurrentPage({
   "url":"search_results.html",
-  "generationDate":new Date(1418850649900.08),
+  "generationDate":new Date(1419006182605.16),
   "isCanvasEnabled":false,
   "variables":["OnLoadVariable",
 "NewVariable"],
@@ -193,38 +193,580 @@
               "adaptiveStyles":{
 }}]},
 {
-          "id":"98ae93fd913346119a5d7df37a636cdf",
-          "label":"",
-          "type":"imageBox",
-          "styleType":"imageBox",
+          "id":"2f1b31f5f41e43fabff1fd12f5ebab3e",
+          "label":"Floors",
+          "type":"dynamicPanel",
+          "styleType":"dynamicPanel",
           "visible":true,
           "style":{
             "location":{
               "x":261,
               "y":153},
             "size":{
-              "width":1060,
-              "height":1133}},
+              "width":10,
+              "height":10}},
           "adaptiveStyles":{
 },
-          "objects":[{
-              "id":"3e0875363fac4ada936fa5ab13efec1c",
-              "label":"",
-              "isContained":true,
-              "type":"richTextPanel",
-              "styleType":"paragraph",
-              "visible":true,
-              "style":{
-                "location":{
-                  "x":261,
-                  "y":153},
-                "size":{
-                  "width":1060,
-                  "height":1133}},
-              "adaptiveStyles":{
+          "scrollbars":"none",
+          "fitToContent":true,
+          "propagate":false,
+          "diagrams":[{
+              "id":"e8458b974076437a9713a0f88581ad93",
+              "label":"9th",
+              "type":"Axure:PanelDiagram",
+              "objects":[{
+                  "id":"98ae93fd913346119a5d7df37a636cdf",
+                  "label":"",
+                  "parentDynamicPanel":"2f1b31f5f41e43fabff1fd12f5ebab3e",
+                  "panelIndex":0,
+                  "type":"imageBox",
+                  "styleType":"imageBox",
+                  "visible":true,
+                  "style":{
+                    "size":{
+                      "width":1060,
+                      "height":1133}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"3e0875363fac4ada936fa5ab13efec1c",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"2f1b31f5f41e43fabff1fd12f5ebab3e",
+                      "panelIndex":0,
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "size":{
+                          "width":1060,
+                          "height":1133}},
+                      "adaptiveStyles":{
 }}],
-          "images":{
-            "normal~":"images/search_results/u10.jpg"}},
+                  "images":{
+                    "normal~":"images/search_results/u11.jpg"}},
+{
+                  "id":"b78ee600503547318822510ece9e8715",
+                  "label":"",
+                  "parentDynamicPanel":"2f1b31f5f41e43fabff1fd12f5ebab3e",
+                  "panelIndex":0,
+                  "type":"imageBox",
+                  "styleType":"imageBox",
+                  "visible":true,
+                  "style":{
+                    "location":{
+                      "x":520,
+                      "y":328},
+                    "size":{
+                      "width":91,
+                      "height":134}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"01217b15073f4dff99ad8e94e6c3dd3a",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"2f1b31f5f41e43fabff1fd12f5ebab3e",
+                      "panelIndex":0,
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "location":{
+                          "x":520,
+                          "y":328},
+                        "size":{
+                          "width":91,
+                          "height":134}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/search_results/u13.png"}},
+{
+                  "id":"5aeba0c911fa4e75876a919bb34a62b0",
+                  "label":"Brian Wolk marker",
+                  "parentDynamicPanel":"2f1b31f5f41e43fabff1fd12f5ebab3e",
+                  "panelIndex":0,
+                  "type":"dynamicPanel",
+                  "styleType":"dynamicPanel",
+                  "disabled":true,
+                  "visible":true,
+                  "style":{
+                    "location":{
+                      "x":771,
+                      "y":516},
+                    "size":{
+                      "width":10,
+                      "height":10}},
+                  "adaptiveStyles":{
+},
+                  "scrollbars":"none",
+                  "fitToContent":true,
+                  "propagate":false,
+                  "diagrams":[{
+                      "id":"c3da0daf2a0249c2a0536588bdfa26cf",
+                      "label":"not selected",
+                      "type":"Axure:PanelDiagram",
+                      "objects":[{
+                          "id":"14f6bd4825c74e788fc2464146c8682a",
+                          "label":"",
+                          "parentDynamicPanel":"5aeba0c911fa4e75876a919bb34a62b0",
+                          "panelIndex":0,
+                          "type":"imageBox",
+                          "styleType":"imageBox",
+                          "visible":true,
+                          "style":{
+                            "size":{
+                              "width":91,
+                              "height":134}},
+                          "adaptiveStyles":{
+},
+                          "objects":[{
+                              "id":"3329059b250a4caa8abcf0bc1d1aa9e3",
+                              "label":"",
+                              "isContained":true,
+                              "parentDynamicPanel":"5aeba0c911fa4e75876a919bb34a62b0",
+                              "panelIndex":0,
+                              "type":"richTextPanel",
+                              "styleType":"paragraph",
+                              "visible":true,
+                              "style":{
+                                "size":{
+                                  "width":91,
+                                  "height":134}},
+                              "adaptiveStyles":{
+}}],
+                          "images":{
+                            "normal~":"images/search_results/u16.png"}}],
+                      "style":{
+                        "fill":{
+                          "fillType":"solid",
+                          "color":0xFFFFFF},
+                        "image":null,
+                        "imageHorizontalAlignment":"near",
+                        "imageVerticalAlignment":"near",
+                        "imageRepeat":"auto"},
+                      "adaptiveStyles":{
+}}]}],
+              "style":{
+                "fill":{
+                  "fillType":"solid",
+                  "color":0xFFFFFF},
+                "image":null,
+                "imageHorizontalAlignment":"near",
+                "imageVerticalAlignment":"near",
+                "imageRepeat":"auto"},
+              "adaptiveStyles":{
+}},
+{
+              "id":"5b1ef7c0337040b1937f06245774f1e2",
+              "label":"8th",
+              "type":"Axure:PanelDiagram",
+              "objects":[{
+                  "id":"cf600e795bcb422d9134f91dfda60327",
+                  "label":"",
+                  "parentDynamicPanel":"2f1b31f5f41e43fabff1fd12f5ebab3e",
+                  "panelIndex":1,
+                  "type":"imageBox",
+                  "styleType":"imageBox",
+                  "visible":true,
+                  "style":{
+                    "location":{
+                      "x":-1,
+                      "y":2},
+                    "size":{
+                      "width":949,
+                      "height":1081},
+                    "rotation":"0",
+                    "textRotation":"0",
+                    "borderWidth":"0",
+                    "cornerRadiusTopLeft":"0"},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"66eea3476b70472a9a00c9f8468e1b65",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"2f1b31f5f41e43fabff1fd12f5ebab3e",
+                      "panelIndex":1,
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "location":{
+                          "x":-1,
+                          "y":2},
+                        "size":{
+                          "width":949,
+                          "height":1081},
+                        "rotation":"0",
+                        "textRotation":"0",
+                        "borderWidth":"0",
+                        "cornerRadiusTopLeft":"0"},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/search_results/u18.png"}},
+{
+                  "id":"2bb1c161397545e78cc592363bdc96f5",
+                  "label":"",
+                  "parentDynamicPanel":"2f1b31f5f41e43fabff1fd12f5ebab3e",
+                  "panelIndex":1,
+                  "type":"imageBox",
+                  "styleType":"imageBox",
+                  "visible":true,
+                  "style":{
+                    "size":{
+                      "width":180,
+                      "height":105}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"8d13135ea4a44b6bbf60f816c117ff61",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"2f1b31f5f41e43fabff1fd12f5ebab3e",
+                      "panelIndex":1,
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "size":{
+                          "width":180,
+                          "height":105}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/search_results/u20.png"}},
+{
+                  "id":"9a951208f0134e6287bc1111d6ae4283",
+                  "label":"",
+                  "parentDynamicPanel":"2f1b31f5f41e43fabff1fd12f5ebab3e",
+                  "panelIndex":1,
+                  "type":"imageBox",
+                  "styleType":"imageBox",
+                  "visible":true,
+                  "style":{
+                    "location":{
+                      "x":478,
+                      "y":690},
+                    "size":{
+                      "width":73,
+                      "height":116}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"5385f36839264af4aa2021d86e801519",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"2f1b31f5f41e43fabff1fd12f5ebab3e",
+                      "panelIndex":1,
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "location":{
+                          "x":478,
+                          "y":690},
+                        "size":{
+                          "width":73,
+                          "height":116}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/search_results/u22.png"}},
+{
+                  "id":"845eac243c094176bcb4b3df9b326b1a",
+                  "label":"Brian Elton",
+                  "parentDynamicPanel":"2f1b31f5f41e43fabff1fd12f5ebab3e",
+                  "panelIndex":1,
+                  "type":"dynamicPanel",
+                  "styleType":"dynamicPanel",
+                  "visible":true,
+                  "style":{
+                    "location":{
+                      "x":284,
+                      "y":361},
+                    "size":{
+                      "width":460,
+                      "height":330}},
+                  "adaptiveStyles":{
+},
+                  "scrollbars":"none",
+                  "fitToContent":false,
+                  "propagate":false,
+                  "diagrams":[{
+                      "id":"c4bb3b7537d04308a733f40728329fd6",
+                      "label":"not selected",
+                      "type":"Axure:PanelDiagram",
+                      "objects":[],
+                      "style":{
+                        "fill":{
+                          "fillType":"solid",
+                          "color":0xFFFFFF},
+                        "image":null,
+                        "imageHorizontalAlignment":"near",
+                        "imageVerticalAlignment":"near",
+                        "imageRepeat":"auto"},
+                      "adaptiveStyles":{
+}},
+{
+                      "id":"c72792fb90d54ec0872882b778e11e8c",
+                      "label":"selected",
+                      "type":"Axure:PanelDiagram",
+                      "objects":[{
+                          "id":"bc8c7e55ddcb451e807cd9f095d23e58",
+                          "label":"",
+                          "parentDynamicPanel":"845eac243c094176bcb4b3df9b326b1a",
+                          "panelIndex":1,
+                          "type":"imageBox",
+                          "styleType":"imageBox",
+                          "visible":true,
+                          "style":{
+                            "location":{
+                              "x":55,
+                              "y":82},
+                            "size":{
+                              "width":340,
+                              "height":248}},
+                          "adaptiveStyles":{
+},
+                          "objects":[{
+                              "id":"ddff3178552d422e809bfaf06371db50",
+                              "label":"",
+                              "isContained":true,
+                              "parentDynamicPanel":"845eac243c094176bcb4b3df9b326b1a",
+                              "panelIndex":1,
+                              "type":"richTextPanel",
+                              "styleType":"paragraph",
+                              "visible":true,
+                              "style":{
+                                "location":{
+                                  "x":55,
+                                  "y":82},
+                                "size":{
+                                  "width":340,
+                                  "height":248}},
+                              "adaptiveStyles":{
+}}],
+                          "images":{
+                            "normal~":"images/search_results/u25.png"}},
+{
+                          "id":"4ad196b2ee8a43989255f77b2718e058",
+                          "label":"",
+                          "parentDynamicPanel":"845eac243c094176bcb4b3df9b326b1a",
+                          "panelIndex":1,
+                          "type":"imageMapRegion",
+                          "styleType":"imageMapRegion",
+                          "visible":true,
+                          "style":{
+                            "location":{
+                              "x":176,
+                              "y":275},
+                            "size":{
+                              "width":90,
+                              "height":30}},
+                          "adaptiveStyles":{
+},
+                          "interactionMap":{
+                            "onClick":{
+                              "description":"OnClick",
+                              "cases":[{
+                                  "description":"BrianW-Spotlight",
+                                  "isNewIfGroup":false,
+                                  "actions":[{
+                                      "action":"linkWindow",
+                                      "description":"Open https://wiki.tor.nurun.com/display/NT/Brian+Elton in New Window/Tab",
+                                      "target":{
+                                        "targetType":"webUrl",
+                                        "urlLiteral":{
+                                          "exprType":"stringLiteral",
+                                          "value":"https://wiki.tor.nurun.com/display/NT/Brian+Elton",
+                                          "stos":[]},
+                                        "includeVariables":false},
+                                      "linkType":"new"}]}]}},
+                          "tabbable":true},
+{
+                          "id":"36dc102dad714337b9eb05963f1413ec",
+                          "label":"",
+                          "parentDynamicPanel":"845eac243c094176bcb4b3df9b326b1a",
+                          "panelIndex":1,
+                          "type":"imageMapRegion",
+                          "styleType":"imageMapRegion",
+                          "visible":true,
+                          "style":{
+                            "location":{
+                              "x":176,
+                              "y":176},
+                            "size":{
+                              "width":180,
+                              "height":22}},
+                          "adaptiveStyles":{
+},
+                          "interactionMap":{
+                            "onClick":{
+                              "description":"OnClick",
+                              "cases":[{
+                                  "description":"Case 1",
+                                  "isNewIfGroup":false,
+                                  "actions":[{
+                                      "action":"linkWindow",
+                                      "description":"Open mailto:brian.elton@nurun.com in Current Window",
+                                      "target":{
+                                        "targetType":"webUrl",
+                                        "urlLiteral":{
+                                          "exprType":"stringLiteral",
+                                          "value":"mailto:brian.elton@nurun.com",
+                                          "stos":[]},
+                                        "includeVariables":false},
+                                      "linkType":"current"}]}]}},
+                          "tabbable":true}],
+                      "style":{
+                        "fill":{
+                          "fillType":"solid",
+                          "color":0xFFFFFF},
+                        "image":null,
+                        "imageHorizontalAlignment":"near",
+                        "imageVerticalAlignment":"near",
+                        "imageRepeat":"auto"},
+                      "adaptiveStyles":{
+}}]},
+{
+                  "id":"84545e0237a64c6ab3370098a12ed1f3",
+                  "label":"Brian Elton",
+                  "parentDynamicPanel":"2f1b31f5f41e43fabff1fd12f5ebab3e",
+                  "panelIndex":1,
+                  "type":"imageMapRegion",
+                  "styleType":"imageMapRegion",
+                  "visible":true,
+                  "style":{
+                    "location":{
+                      "x":478,
+                      "y":669},
+                    "size":{
+                      "width":80,
+                      "height":121}},
+                  "adaptiveStyles":{
+},
+                  "interactionMap":{
+                    "onClick":{
+                      "description":"OnClick",
+                      "cases":[{
+                          "description":"toggle on<br> (If state of Brian Elton equals not selected)",
+                          "isNewIfGroup":false,
+                          "condition":{
+                            "exprType":"binaryOp",
+                            "op":"==",
+                            "leftExpr":{
+                              "exprType":"fcall",
+                              "functionName":"GetPanelState",
+                              "arguments":[{
+                                  "exprType":"pathLiteral",
+                                  "isThis":false,
+                                  "isFocused":false,
+                                  "isTarget":false,
+                                  "value":["845eac243c094176bcb4b3df9b326b1a"]}]},
+                            "rightExpr":{
+                              "exprType":"panelDiagramLiteral",
+                              "panelPath":["845eac243c094176bcb4b3df9b326b1a"],
+                              "panelIndex":0}},
+                          "actions":[{
+                              "action":"setPanelState",
+                              "description":"Set Search-results-list to BrianE-selected",
+                              "panelsToStates":[{
+                                  "panelPath":["b6efb61676f0472aba5a837716981f68"],
+                                  "stateInfo":{
+                                    "setStateType":"diagram",
+                                    "stateNumber":3,
+                                    "stateValue":{
+                                      "exprType":"stringLiteral",
+                                      "value":"1",
+                                      "stos":[]},
+                                    "loop":false,
+                                    "showWhenSet":false,
+                                    "options":{
+                                      "compress":false}}}]},
+{
+                              "action":"setPanelState",
+                              "description":"Set Brian Elton to selected slide up in 500ms",
+                              "panelsToStates":[{
+                                  "panelPath":["845eac243c094176bcb4b3df9b326b1a"],
+                                  "stateInfo":{
+                                    "setStateType":"diagram",
+                                    "stateNumber":2,
+                                    "stateValue":{
+                                      "exprType":"stringLiteral",
+                                      "value":"1",
+                                      "stos":[]},
+                                    "loop":false,
+                                    "showWhenSet":false,
+                                    "options":{
+                                      "animateIn":{
+                                        "easing":"slideUp",
+                                        "duration":500},
+                                      "compress":false}}}]}]},
+{
+                          "description":"toggle off<br> (Else If state of Brian Elton equals selected)",
+                          "isNewIfGroup":false,
+                          "condition":{
+                            "exprType":"binaryOp",
+                            "op":"==",
+                            "leftExpr":{
+                              "exprType":"fcall",
+                              "functionName":"GetPanelState",
+                              "arguments":[{
+                                  "exprType":"pathLiteral",
+                                  "isThis":false,
+                                  "isFocused":false,
+                                  "isTarget":false,
+                                  "value":["845eac243c094176bcb4b3df9b326b1a"]}]},
+                            "rightExpr":{
+                              "exprType":"panelDiagramLiteral",
+                              "panelPath":["845eac243c094176bcb4b3df9b326b1a"],
+                              "panelIndex":1}},
+                          "actions":[{
+                              "action":"setPanelState",
+                              "description":"Set Brian Elton to not selected slide down out 500ms,<br>Search-results-list to not selected",
+                              "panelsToStates":[{
+                                  "panelPath":["845eac243c094176bcb4b3df9b326b1a"],
+                                  "stateInfo":{
+                                    "setStateType":"diagram",
+                                    "stateNumber":1,
+                                    "stateValue":{
+                                      "exprType":"stringLiteral",
+                                      "value":"1",
+                                      "stos":[]},
+                                    "loop":false,
+                                    "showWhenSet":false,
+                                    "options":{
+                                      "animateOut":{
+                                        "easing":"slideDown",
+                                        "duration":500},
+                                      "compress":false}}},
+{
+                                  "panelPath":["b6efb61676f0472aba5a837716981f68"],
+                                  "stateInfo":{
+                                    "setStateType":"diagram",
+                                    "stateNumber":1,
+                                    "stateValue":{
+                                      "exprType":"stringLiteral",
+                                      "value":"1",
+                                      "stos":[]},
+                                    "loop":false,
+                                    "showWhenSet":false,
+                                    "options":{
+                                      "compress":false}}}]}]}]}},
+                  "tabbable":true}],
+              "style":{
+                "fill":{
+                  "fillType":"solid",
+                  "color":0xFFFFFF},
+                "image":null,
+                "imageHorizontalAlignment":"near",
+                "imageVerticalAlignment":"near",
+                "imageRepeat":"auto"},
+              "adaptiveStyles":{
+}}]},
 {
           "id":"b6efb61676f0472aba5a837716981f68",
           "label":"Search-results-list",
@@ -277,7 +819,7 @@
                       "adaptiveStyles":{
 }}],
                   "images":{
-                    "normal~":"images/search_results/u13.png"}}],
+                    "normal~":"images/search_results/u31.png"}}],
               "style":{
                 "fill":{
                   "fillType":"solid",
@@ -328,7 +870,89 @@
                       "adaptiveStyles":{
 }}],
                   "images":{
-                    "normal~":"images/search_results/u15.png"}}],
+                    "normal~":"images/search_results/u33.png"}}],
+              "style":{
+                "fill":{
+                  "fillType":"solid",
+                  "color":0xFFFFFF},
+                "image":null,
+                "imageHorizontalAlignment":"near",
+                "imageVerticalAlignment":"near",
+                "imageRepeat":"auto"},
+              "adaptiveStyles":{
+}},
+{
+              "id":"b58f18b7e13d4769b9a360f9c18e43ba",
+              "label":"BrianE-selected",
+              "type":"Axure:PanelDiagram",
+              "objects":[{
+                  "id":"a68096eb00e743e09fbaa2989800b356",
+                  "label":"",
+                  "parentDynamicPanel":"b6efb61676f0472aba5a837716981f68",
+                  "panelIndex":2,
+                  "type":"imageBox",
+                  "styleType":"imageBox",
+                  "visible":true,
+                  "style":{
+                    "size":{
+                      "width":285,
+                      "height":204}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"823a90fba2904e61b6d7452f3d3c57c8",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"b6efb61676f0472aba5a837716981f68",
+                      "panelIndex":2,
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "size":{
+                          "width":285,
+                          "height":204}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/search_results/u31.png"}},
+{
+                  "id":"e4cd049144d54271b1e562ab48f4b749",
+                  "label":"",
+                  "parentDynamicPanel":"b6efb61676f0472aba5a837716981f68",
+                  "panelIndex":2,
+                  "type":"imageBox",
+                  "styleType":"imageBox",
+                  "visible":true,
+                  "style":{
+                    "location":{
+                      "x":-1,
+                      "y":139},
+                    "size":{
+                      "width":312,
+                      "height":66}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"516c76c4923a4aceb4cbb4ca102d7edc",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"b6efb61676f0472aba5a837716981f68",
+                      "panelIndex":2,
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "location":{
+                          "x":-1,
+                          "y":139},
+                        "size":{
+                          "width":312,
+                          "height":66}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/search_results/u37.png"}}],
               "style":{
                 "fill":{
                   "fillType":"solid",
@@ -347,7 +971,7 @@
                   "id":"b0df78e3ee3047df8ac08936ccdf5a86",
                   "label":"",
                   "parentDynamicPanel":"b6efb61676f0472aba5a837716981f68",
-                  "panelIndex":2,
+                  "panelIndex":3,
                   "type":"imageBox",
                   "styleType":"imageBox",
                   "visible":true,
@@ -365,7 +989,7 @@
                       "label":"",
                       "isContained":true,
                       "parentDynamicPanel":"b6efb61676f0472aba5a837716981f68",
-                      "panelIndex":2,
+                      "panelIndex":3,
                       "type":"richTextPanel",
                       "styleType":"paragraph",
                       "visible":true,
@@ -379,12 +1003,12 @@
                       "adaptiveStyles":{
 }}],
                   "images":{
-                    "normal~":"images/search_results/u13.png"}},
+                    "normal~":"images/search_results/u31.png"}},
 {
                   "id":"587b2798a19a4f40a55c30e7bc02425d",
                   "label":"",
                   "parentDynamicPanel":"b6efb61676f0472aba5a837716981f68",
-                  "panelIndex":2,
+                  "panelIndex":3,
                   "type":"imageBox",
                   "styleType":"imageBox",
                   "visible":true,
@@ -402,7 +1026,7 @@
                       "label":"",
                       "isContained":true,
                       "parentDynamicPanel":"b6efb61676f0472aba5a837716981f68",
-                      "panelIndex":2,
+                      "panelIndex":3,
                       "type":"richTextPanel",
                       "styleType":"paragraph",
                       "visible":true,
@@ -416,7 +1040,7 @@
                       "adaptiveStyles":{
 }}],
                   "images":{
-                    "normal~":"images/search_results/u19.png"}}],
+                    "normal~":"images/search_results/u41.png"}}],
               "style":{
                 "fill":{
                   "fillType":"solid",
@@ -435,7 +1059,7 @@
                   "id":"6702156305c24dbc80ee20cf667d31f0",
                   "label":"",
                   "parentDynamicPanel":"b6efb61676f0472aba5a837716981f68",
-                  "panelIndex":3,
+                  "panelIndex":4,
                   "type":"imageBox",
                   "styleType":"imageBox",
                   "visible":true,
@@ -453,7 +1077,7 @@
                       "label":"",
                       "isContained":true,
                       "parentDynamicPanel":"b6efb61676f0472aba5a837716981f68",
-                      "panelIndex":3,
+                      "panelIndex":4,
                       "type":"richTextPanel",
                       "styleType":"paragraph",
                       "visible":true,
@@ -467,12 +1091,12 @@
                       "adaptiveStyles":{
 }}],
                   "images":{
-                    "normal~":"images/search_results/u13.png"}},
+                    "normal~":"images/search_results/u31.png"}},
 {
                   "id":"ea996b384fe44b198d998a2fe155e4ac",
                   "label":"",
                   "parentDynamicPanel":"b6efb61676f0472aba5a837716981f68",
-                  "panelIndex":3,
+                  "panelIndex":4,
                   "type":"imageBox",
                   "styleType":"imageBox",
                   "visible":true,
@@ -490,7 +1114,7 @@
                       "label":"",
                       "isContained":true,
                       "parentDynamicPanel":"b6efb61676f0472aba5a837716981f68",
-                      "panelIndex":3,
+                      "panelIndex":4,
                       "type":"richTextPanel",
                       "styleType":"paragraph",
                       "visible":true,
@@ -504,71 +1128,7 @@
                       "adaptiveStyles":{
 }}],
                   "images":{
-                    "normal~":"images/search_results/u23.png"}}],
-              "style":{
-                "fill":{
-                  "fillType":"solid",
-                  "color":0xFFFFFF},
-                "image":null,
-                "imageHorizontalAlignment":"near",
-                "imageVerticalAlignment":"near",
-                "imageRepeat":"auto"},
-              "adaptiveStyles":{
-}}]},
-{
-          "id":"ab7da5fa7e234b8eb1fecc590c242eef",
-          "label":"Brian Wolk marker",
-          "type":"dynamicPanel",
-          "styleType":"dynamicPanel",
-          "disabled":true,
-          "visible":true,
-          "style":{
-            "location":{
-              "x":1030.5,
-              "y":668},
-            "size":{
-              "width":10,
-              "height":10}},
-          "adaptiveStyles":{
-},
-          "scrollbars":"none",
-          "fitToContent":true,
-          "propagate":false,
-          "diagrams":[{
-              "id":"5e3b1604df71483aaf9cc9190d18ab05",
-              "label":"not selected",
-              "type":"Axure:PanelDiagram",
-              "objects":[{
-                  "id":"ed85f3b096224f15986afa6243082a1c",
-                  "label":"",
-                  "parentDynamicPanel":"ab7da5fa7e234b8eb1fecc590c242eef",
-                  "panelIndex":0,
-                  "type":"imageBox",
-                  "styleType":"imageBox",
-                  "visible":true,
-                  "style":{
-                    "size":{
-                      "width":91,
-                      "height":134}},
-                  "adaptiveStyles":{
-},
-                  "objects":[{
-                      "id":"23ba64e7c7bc4448b43e7180873052bf",
-                      "label":"",
-                      "isContained":true,
-                      "parentDynamicPanel":"ab7da5fa7e234b8eb1fecc590c242eef",
-                      "panelIndex":0,
-                      "type":"richTextPanel",
-                      "styleType":"paragraph",
-                      "visible":true,
-                      "style":{
-                        "size":{
-                          "width":91,
-                          "height":134}},
-                      "adaptiveStyles":{
-}}],
-                  "images":{
-                    "normal~":"images/search_results/u26.png"}}],
+                    "normal~":"images/search_results/u45.png"}}],
               "style":{
                 "fill":{
                   "fillType":"solid",
@@ -652,7 +1212,7 @@
                       "adaptiveStyles":{
 }}],
                   "images":{
-                    "normal~":"images/search_results/u29.png"}},
+                    "normal~":"images/search_results/u48.png"}},
 {
                   "id":"b1e1ebce1d5b44009f5c63664e55cf24",
                   "label":"",
@@ -759,7 +1319,7 @@
                       "adaptiveStyles":{
 }}],
                   "images":{
-                    "normal~":"images/search_results/u33.png"}}],
+                    "normal~":"images/search_results/u52.png"}}],
               "style":{
                 "fill":{
                   "fillType":"solid",
@@ -779,7 +1339,7 @@
           "style":{
             "location":{
               "x":1041,
-              "y":669},
+              "y":668},
             "size":{
               "width":70,
               "height":121}},
@@ -809,7 +1369,7 @@
                       "panelIndex":0}},
                   "actions":[{
                       "action":"setPanelState",
-                      "description":"Set Brian Wolk to selected slide up in 500ms",
+                      "description":"Set Brian Wolk to selected slide up in 500ms,<br>Brian Clarey to not selected",
                       "panelsToStates":[{
                           "panelPath":["e8c2c73b252d4575989c42572f00038a"],
                           "stateInfo":{
@@ -825,6 +1385,19 @@
                               "animateIn":{
                                 "easing":"slideUp",
                                 "duration":500},
+                              "compress":false}}},
+{
+                          "panelPath":["693ab464ba784e3aa4f183e78e111648"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":false,
+                            "options":{
                               "compress":false}}}]},
 {
                       "action":"setPanelState",
@@ -833,7 +1406,7 @@
                           "panelPath":["b6efb61676f0472aba5a837716981f68"],
                           "stateInfo":{
                             "setStateType":"diagram",
-                            "stateNumber":3,
+                            "stateNumber":4,
                             "stateValue":{
                               "exprType":"stringLiteral",
                               "value":"1",
@@ -898,39 +1471,6 @@
                               "compress":false}}}]}]}]}},
           "tabbable":true},
 {
-          "id":"22aff46ef4b3447ca1c0f9eb05cac582",
-          "label":"",
-          "type":"imageBox",
-          "styleType":"imageBox",
-          "visible":true,
-          "style":{
-            "location":{
-              "x":789,
-              "y":436},
-            "size":{
-              "width":91,
-              "height":134}},
-          "adaptiveStyles":{
-},
-          "objects":[{
-              "id":"3d58ba12406e41e190228c8bd559d622",
-              "label":"",
-              "isContained":true,
-              "type":"richTextPanel",
-              "styleType":"paragraph",
-              "visible":true,
-              "style":{
-                "location":{
-                  "x":789,
-                  "y":436},
-                "size":{
-                  "width":91,
-                  "height":134}},
-              "adaptiveStyles":{
-}}],
-          "images":{
-            "normal~":"images/search_results/u36.png"}},
-{
           "id":"693ab464ba784e3aa4f183e78e111648",
           "label":"Brian Clarey",
           "type":"dynamicPanel",
@@ -938,8 +1478,8 @@
           "visible":true,
           "style":{
             "location":{
-              "x":600,
-              "y":170},
+              "x":595,
+              "y":157},
             "size":{
               "width":460,
               "height":330}},
@@ -977,8 +1517,8 @@
                   "visible":true,
                   "style":{
                     "location":{
-                      "x":60,
-                      "y":28},
+                      "x":55,
+                      "y":81},
                     "size":{
                       "width":340,
                       "height":248}},
@@ -995,15 +1535,15 @@
                       "visible":true,
                       "style":{
                         "location":{
-                          "x":60,
-                          "y":28},
+                          "x":55,
+                          "y":81},
                         "size":{
                           "width":340,
                           "height":248}},
                       "adaptiveStyles":{
 }}],
                   "images":{
-                    "normal~":"images/search_results/u39.png"}},
+                    "normal~":"images/search_results/u56.png"}},
 {
                   "id":"d9169dc48456434990c9b62f2d372343",
                   "label":"",
@@ -1014,8 +1554,8 @@
                   "visible":true,
                   "style":{
                     "location":{
-                      "x":180,
-                      "y":221},
+                      "x":177,
+                      "y":270},
                     "size":{
                       "width":90,
                       "height":30}},
@@ -1049,8 +1589,8 @@
                   "visible":true,
                   "style":{
                     "location":{
-                      "x":180,
-                      "y":128},
+                      "x":176,
+                      "y":178},
                     "size":{
                       "width":180,
                       "height":22}},
@@ -1092,8 +1632,8 @@
           "visible":true,
           "style":{
             "location":{
-              "x":798,
-              "y":410},
+              "x":790,
+              "y":449},
             "size":{
               "width":80,
               "height":121}},
@@ -1123,7 +1663,7 @@
                       "panelIndex":0}},
                   "actions":[{
                       "action":"setPanelState",
-                      "description":"Set Brian Clarey to selected slide up in 500ms",
+                      "description":"Set Brian Clarey to selected slide up in 500ms,<br>Brian Wolk to not selected",
                       "panelsToStates":[{
                           "panelPath":["693ab464ba784e3aa4f183e78e111648"],
                           "stateInfo":{
@@ -1139,6 +1679,19 @@
                               "animateIn":{
                                 "easing":"slideUp",
                                 "duration":500},
+                              "compress":false}}},
+{
+                          "panelPath":["e8c2c73b252d4575989c42572f00038a"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":false,
+                            "options":{
                               "compress":false}}}]},
 {
                       "action":"setPanelState",
@@ -1147,7 +1700,7 @@
                           "panelPath":["b6efb61676f0472aba5a837716981f68"],
                           "stateInfo":{
                             "setStateType":"diagram",
-                            "stateNumber":4,
+                            "stateNumber":5,
                             "stateValue":{
                               "exprType":"stringLiteral",
                               "value":"1",
@@ -1279,15 +1832,9 @@
                               "compress":false}}}]},
 {
                       "action":"fadeWidget",
-                      "description":"Show Brian Wolk marker,<br>(Image)",
+                      "description":"Show Brian Wolk marker",
                       "objectsToFades":[{
-                          "objectPath":["ab7da5fa7e234b8eb1fecc590c242eef"],
-                          "fadeInfo":{
-                            "fadeType":"show",
-                            "options":{
-                              "showType":"none"}}},
-{
-                          "objectPath":["ed85f3b096224f15986afa6243082a1c"],
+                          "objectPath":["5aeba0c911fa4e75876a919bb34a62b0"],
                           "fadeInfo":{
                             "fadeType":"show",
                             "options":{
@@ -1313,12 +1860,64 @@
                       "panelIndex":0}},
                   "actions":[{
                       "action":"setPanelState",
-                      "description":"Set Filters to filter-off",
+                      "description":"Set Filters to filter-off,<br>Floors to 9th,<br>Brian Elton to not selected,<br>Brian Wolk to not selected,<br>Brian Clarey to not selected",
                       "panelsToStates":[{
                           "panelPath":["67c9badb82194ea885e7df5c22119e76"],
                           "stateInfo":{
                             "setStateType":"diagram",
                             "stateNumber":2,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":false,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["2f1b31f5f41e43fabff1fd12f5ebab3e"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":false,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["845eac243c094176bcb4b3df9b326b1a"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":false,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["e8c2c73b252d4575989c42572f00038a"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":false,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["693ab464ba784e3aa4f183e78e111648"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
                             "stateValue":{
                               "exprType":"stringLiteral",
                               "value":"1",
@@ -1345,15 +1944,9 @@
                               "compress":false}}}]},
 {
                       "action":"fadeWidget",
-                      "description":"Hide Brian Wolk marker,<br>(Image)",
+                      "description":"Hide Brian Wolk marker",
                       "objectsToFades":[{
-                          "objectPath":["ab7da5fa7e234b8eb1fecc590c242eef"],
-                          "fadeInfo":{
-                            "fadeType":"hide",
-                            "options":{
-                              "showType":"none"}}},
-{
-                          "objectPath":["ed85f3b096224f15986afa6243082a1c"],
+                          "objectPath":["5aeba0c911fa4e75876a919bb34a62b0"],
                           "fadeInfo":{
                             "fadeType":"hide",
                             "options":{
@@ -1378,32 +1971,99 @@
             "onClick":{
               "description":"OnClick",
               "cases":[{
-                  "description":"On<br> (If state of Search-results-list equals not selected)",
+                  "description":"On<br> (If state of Search-results-list equals not selected or state of Search-results-list equals BrianC-selected or state of Search-results-list equals BrianE-selected)",
                   "isNewIfGroup":false,
                   "condition":{
                     "exprType":"binaryOp",
-                    "op":"==",
+                    "op":"||",
                     "leftExpr":{
-                      "exprType":"fcall",
-                      "functionName":"GetPanelState",
-                      "arguments":[{
-                          "exprType":"pathLiteral",
-                          "isThis":false,
-                          "isFocused":false,
-                          "isTarget":false,
-                          "value":["b6efb61676f0472aba5a837716981f68"]}]},
+                      "exprType":"binaryOp",
+                      "op":"==",
+                      "leftExpr":{
+                        "exprType":"fcall",
+                        "functionName":"GetPanelState",
+                        "arguments":[{
+                            "exprType":"pathLiteral",
+                            "isThis":false,
+                            "isFocused":false,
+                            "isTarget":false,
+                            "value":["b6efb61676f0472aba5a837716981f68"]}]},
+                      "rightExpr":{
+                        "exprType":"panelDiagramLiteral",
+                        "panelPath":["b6efb61676f0472aba5a837716981f68"],
+                        "panelIndex":0}},
                     "rightExpr":{
-                      "exprType":"panelDiagramLiteral",
-                      "panelPath":["b6efb61676f0472aba5a837716981f68"],
-                      "panelIndex":0}},
+                      "exprType":"binaryOp",
+                      "op":"||",
+                      "leftExpr":{
+                        "exprType":"binaryOp",
+                        "op":"==",
+                        "leftExpr":{
+                          "exprType":"fcall",
+                          "functionName":"GetPanelState",
+                          "arguments":[{
+                              "exprType":"pathLiteral",
+                              "isThis":false,
+                              "isFocused":false,
+                              "isTarget":false,
+                              "value":["b6efb61676f0472aba5a837716981f68"]}]},
+                        "rightExpr":{
+                          "exprType":"panelDiagramLiteral",
+                          "panelPath":["b6efb61676f0472aba5a837716981f68"],
+                          "panelIndex":4}},
+                      "rightExpr":{
+                        "exprType":"binaryOp",
+                        "op":"==",
+                        "leftExpr":{
+                          "exprType":"fcall",
+                          "functionName":"GetPanelState",
+                          "arguments":[{
+                              "exprType":"pathLiteral",
+                              "isThis":false,
+                              "isFocused":false,
+                              "isTarget":false,
+                              "value":["b6efb61676f0472aba5a837716981f68"]}]},
+                        "rightExpr":{
+                          "exprType":"panelDiagramLiteral",
+                          "panelPath":["b6efb61676f0472aba5a837716981f68"],
+                          "panelIndex":2}}}},
                   "actions":[{
                       "action":"setPanelState",
-                      "description":"Set Search-results-list to BrianW-selected",
+                      "description":"Set Search-results-list to BrianW-selected,<br>Floors to 9th slide right out 500ms,<br>Brian Clarey to not selected",
                       "panelsToStates":[{
                           "panelPath":["b6efb61676f0472aba5a837716981f68"],
                           "stateInfo":{
                             "setStateType":"diagram",
-                            "stateNumber":3,
+                            "stateNumber":4,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":false,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["2f1b31f5f41e43fabff1fd12f5ebab3e"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":false,
+                            "options":{
+                              "animateOut":{
+                                "easing":"slideRight",
+                                "duration":500},
+                              "compress":false}}},
+{
+                          "panelPath":["693ab464ba784e3aa4f183e78e111648"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
                             "stateValue":{
                               "exprType":"stringLiteral",
                               "value":"1",
@@ -1449,7 +2109,7 @@
                     "rightExpr":{
                       "exprType":"panelDiagramLiteral",
                       "panelPath":["b6efb61676f0472aba5a837716981f68"],
-                      "panelIndex":2}},
+                      "panelIndex":3}},
                   "actions":[{
                       "action":"setPanelState",
                       "description":"Set Search-results-list to not selected",
@@ -1505,32 +2165,99 @@
             "onClick":{
               "description":"OnClick",
               "cases":[{
-                  "description":"On<br> (If state of Search-results-list equals not selected)",
+                  "description":"On<br> (If state of Search-results-list equals not selected or state of Search-results-list equals BrianW-selected or state of Search-results-list equals BrianE-selected)",
                   "isNewIfGroup":false,
                   "condition":{
                     "exprType":"binaryOp",
-                    "op":"==",
+                    "op":"||",
                     "leftExpr":{
-                      "exprType":"fcall",
-                      "functionName":"GetPanelState",
-                      "arguments":[{
-                          "exprType":"pathLiteral",
-                          "isThis":false,
-                          "isFocused":false,
-                          "isTarget":false,
-                          "value":["b6efb61676f0472aba5a837716981f68"]}]},
+                      "exprType":"binaryOp",
+                      "op":"==",
+                      "leftExpr":{
+                        "exprType":"fcall",
+                        "functionName":"GetPanelState",
+                        "arguments":[{
+                            "exprType":"pathLiteral",
+                            "isThis":false,
+                            "isFocused":false,
+                            "isTarget":false,
+                            "value":["b6efb61676f0472aba5a837716981f68"]}]},
+                      "rightExpr":{
+                        "exprType":"panelDiagramLiteral",
+                        "panelPath":["b6efb61676f0472aba5a837716981f68"],
+                        "panelIndex":0}},
                     "rightExpr":{
-                      "exprType":"panelDiagramLiteral",
-                      "panelPath":["b6efb61676f0472aba5a837716981f68"],
-                      "panelIndex":0}},
+                      "exprType":"binaryOp",
+                      "op":"||",
+                      "leftExpr":{
+                        "exprType":"binaryOp",
+                        "op":"==",
+                        "leftExpr":{
+                          "exprType":"fcall",
+                          "functionName":"GetPanelState",
+                          "arguments":[{
+                              "exprType":"pathLiteral",
+                              "isThis":false,
+                              "isFocused":false,
+                              "isTarget":false,
+                              "value":["b6efb61676f0472aba5a837716981f68"]}]},
+                        "rightExpr":{
+                          "exprType":"panelDiagramLiteral",
+                          "panelPath":["b6efb61676f0472aba5a837716981f68"],
+                          "panelIndex":3}},
+                      "rightExpr":{
+                        "exprType":"binaryOp",
+                        "op":"==",
+                        "leftExpr":{
+                          "exprType":"fcall",
+                          "functionName":"GetPanelState",
+                          "arguments":[{
+                              "exprType":"pathLiteral",
+                              "isThis":false,
+                              "isFocused":false,
+                              "isTarget":false,
+                              "value":["b6efb61676f0472aba5a837716981f68"]}]},
+                        "rightExpr":{
+                          "exprType":"panelDiagramLiteral",
+                          "panelPath":["b6efb61676f0472aba5a837716981f68"],
+                          "panelIndex":2}}}},
                   "actions":[{
                       "action":"setPanelState",
-                      "description":"Set Search-results-list to BrianC-selected",
+                      "description":"Set Search-results-list to BrianC-selected,<br>Floors to 9th slide right out 500ms,<br>Brian Wolk to not selected",
                       "panelsToStates":[{
                           "panelPath":["b6efb61676f0472aba5a837716981f68"],
                           "stateInfo":{
                             "setStateType":"diagram",
-                            "stateNumber":4,
+                            "stateNumber":5,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":false,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["2f1b31f5f41e43fabff1fd12f5ebab3e"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":false,
+                            "options":{
+                              "animateOut":{
+                                "easing":"slideRight",
+                                "duration":500},
+                              "compress":false}}},
+{
+                          "panelPath":["e8c2c73b252d4575989c42572f00038a"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
                             "stateValue":{
                               "exprType":"stringLiteral",
                               "value":"1",
@@ -1576,7 +2303,7 @@
                     "rightExpr":{
                       "exprType":"panelDiagramLiteral",
                       "panelPath":["b6efb61676f0472aba5a837716981f68"],
-                      "panelIndex":3}},
+                      "panelIndex":4}},
                   "actions":[{
                       "action":"setPanelState",
                       "description":"Set Search-results-list to not selected",
@@ -1642,6 +2369,395 @@
                         "url":"home.html",
                         "includeVariables":true},
                       "linkType":"current"}]}]}},
+          "tabbable":true},
+{
+          "id":"ef9d91d590a142fabdb2e3fcb55982da",
+          "label":"8th Floor click",
+          "type":"imageMapRegion",
+          "styleType":"imageMapRegion",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":350,
+              "y":221},
+            "size":{
+              "width":70,
+              "height":30}},
+          "adaptiveStyles":{
+},
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"floor check<br> (If state of Filters equals filter-off)",
+                  "isNewIfGroup":false,
+                  "condition":{
+                    "exprType":"binaryOp",
+                    "op":"==",
+                    "leftExpr":{
+                      "exprType":"fcall",
+                      "functionName":"GetPanelState",
+                      "arguments":[{
+                          "exprType":"pathLiteral",
+                          "isThis":false,
+                          "isFocused":false,
+                          "isTarget":false,
+                          "value":["67c9badb82194ea885e7df5c22119e76"]}]},
+                    "rightExpr":{
+                      "exprType":"panelDiagramLiteral",
+                      "panelPath":["67c9badb82194ea885e7df5c22119e76"],
+                      "panelIndex":1}},
+                  "actions":[{
+                      "action":"setPanelState",
+                      "description":"Set Floors to 9th",
+                      "panelsToStates":[{
+                          "panelPath":["2f1b31f5f41e43fabff1fd12f5ebab3e"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":false,
+                            "options":{
+                              "compress":false}}}]}]},
+{
+                  "description":"Case 1<br> (Else If True)",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"setPanelState",
+                      "description":"Set Floors to 8th slide left in 500ms,<br>Search-results-list to not selected,<br>Brian Clarey to not selected,<br>Brian Wolk to not selected",
+                      "panelsToStates":[{
+                          "panelPath":["2f1b31f5f41e43fabff1fd12f5ebab3e"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":2,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":false,
+                            "options":{
+                              "animateIn":{
+                                "easing":"slideLeft",
+                                "duration":500},
+                              "compress":false}}},
+{
+                          "panelPath":["b6efb61676f0472aba5a837716981f68"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":false,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["693ab464ba784e3aa4f183e78e111648"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":false,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["e8c2c73b252d4575989c42572f00038a"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":false,
+                            "options":{
+                              "compress":false}}}]}]}]}},
+          "tabbable":true},
+{
+          "id":"0c1bc24d1901403d8036663bfc2c0e1b",
+          "label":"9th click",
+          "type":"imageMapRegion",
+          "styleType":"imageMapRegion",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":351,
+              "y":193},
+            "size":{
+              "width":70,
+              "height":30}},
+          "adaptiveStyles":{
+},
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"Case 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"setPanelState",
+                      "description":"Set Floors to 9th slide right in 500ms,<br>Brian Elton to not selected,<br>Search-results-list to not selected",
+                      "panelsToStates":[{
+                          "panelPath":["2f1b31f5f41e43fabff1fd12f5ebab3e"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":false,
+                            "options":{
+                              "animateIn":{
+                                "easing":"slideRight",
+                                "duration":500},
+                              "compress":false}}},
+{
+                          "panelPath":["845eac243c094176bcb4b3df9b326b1a"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":false,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["b6efb61676f0472aba5a837716981f68"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":false,
+                            "options":{
+                              "compress":false}}}]}]}]}},
+          "tabbable":true},
+{
+          "id":"09fd301d988c40b58836581393d1f5cf",
+          "label":"menu-BE",
+          "type":"imageMapRegion",
+          "styleType":"imageMapRegion",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":-8,
+              "y":297},
+            "size":{
+              "width":261,
+              "height":50}},
+          "adaptiveStyles":{
+},
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"On<br> (If state of Search-results-list equals not selected or state of Search-results-list equals BrianW-selected or state of Search-results-list equals BrianC-selected)",
+                  "isNewIfGroup":false,
+                  "condition":{
+                    "exprType":"binaryOp",
+                    "op":"||",
+                    "leftExpr":{
+                      "exprType":"binaryOp",
+                      "op":"==",
+                      "leftExpr":{
+                        "exprType":"fcall",
+                        "functionName":"GetPanelState",
+                        "arguments":[{
+                            "exprType":"pathLiteral",
+                            "isThis":false,
+                            "isFocused":false,
+                            "isTarget":false,
+                            "value":["b6efb61676f0472aba5a837716981f68"]}]},
+                      "rightExpr":{
+                        "exprType":"panelDiagramLiteral",
+                        "panelPath":["b6efb61676f0472aba5a837716981f68"],
+                        "panelIndex":0}},
+                    "rightExpr":{
+                      "exprType":"binaryOp",
+                      "op":"||",
+                      "leftExpr":{
+                        "exprType":"binaryOp",
+                        "op":"==",
+                        "leftExpr":{
+                          "exprType":"fcall",
+                          "functionName":"GetPanelState",
+                          "arguments":[{
+                              "exprType":"pathLiteral",
+                              "isThis":false,
+                              "isFocused":false,
+                              "isTarget":false,
+                              "value":["b6efb61676f0472aba5a837716981f68"]}]},
+                        "rightExpr":{
+                          "exprType":"panelDiagramLiteral",
+                          "panelPath":["b6efb61676f0472aba5a837716981f68"],
+                          "panelIndex":3}},
+                      "rightExpr":{
+                        "exprType":"binaryOp",
+                        "op":"==",
+                        "leftExpr":{
+                          "exprType":"fcall",
+                          "functionName":"GetPanelState",
+                          "arguments":[{
+                              "exprType":"pathLiteral",
+                              "isThis":false,
+                              "isFocused":false,
+                              "isTarget":false,
+                              "value":["b6efb61676f0472aba5a837716981f68"]}]},
+                        "rightExpr":{
+                          "exprType":"panelDiagramLiteral",
+                          "panelPath":["b6efb61676f0472aba5a837716981f68"],
+                          "panelIndex":4}}}},
+                  "actions":[{
+                      "action":"setPanelState",
+                      "description":"Set Search-results-list to BrianE-selected,<br>Brian Wolk to not selected,<br>Brian Clarey to not selected",
+                      "panelsToStates":[{
+                          "panelPath":["b6efb61676f0472aba5a837716981f68"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":3,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":false,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["e8c2c73b252d4575989c42572f00038a"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":false,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["693ab464ba784e3aa4f183e78e111648"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":false,
+                            "options":{
+                              "compress":false}}}]},
+{
+                      "action":"setPanelState",
+                      "description":"Set Brian Elton to selected slide up in 500ms,<br>Floors to 8th slide left in 500ms",
+                      "panelsToStates":[{
+                          "panelPath":["845eac243c094176bcb4b3df9b326b1a"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":2,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":false,
+                            "options":{
+                              "animateIn":{
+                                "easing":"slideUp",
+                                "duration":500},
+                              "compress":false}}},
+{
+                          "panelPath":["2f1b31f5f41e43fabff1fd12f5ebab3e"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":2,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":false,
+                            "options":{
+                              "animateIn":{
+                                "easing":"slideLeft",
+                                "duration":500},
+                              "compress":false}}}]}]},
+{
+                  "description":"Off<br> (Else If state of Search-results-list equals BrianE-selected)",
+                  "isNewIfGroup":false,
+                  "condition":{
+                    "exprType":"binaryOp",
+                    "op":"==",
+                    "leftExpr":{
+                      "exprType":"fcall",
+                      "functionName":"GetPanelState",
+                      "arguments":[{
+                          "exprType":"pathLiteral",
+                          "isThis":false,
+                          "isFocused":false,
+                          "isTarget":false,
+                          "value":["b6efb61676f0472aba5a837716981f68"]}]},
+                    "rightExpr":{
+                      "exprType":"panelDiagramLiteral",
+                      "panelPath":["b6efb61676f0472aba5a837716981f68"],
+                      "panelIndex":2}},
+                  "actions":[{
+                      "action":"setPanelState",
+                      "description":"Set Search-results-list to not selected",
+                      "panelsToStates":[{
+                          "panelPath":["b6efb61676f0472aba5a837716981f68"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":false,
+                            "options":{
+                              "compress":false}}}]},
+{
+                      "action":"setPanelState",
+                      "description":"Set Brian Elton to not selected slide down out 500ms",
+                      "panelsToStates":[{
+                          "panelPath":["845eac243c094176bcb4b3df9b326b1a"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":false,
+                            "options":{
+                              "animateOut":{
+                                "easing":"slideDown",
+                                "duration":500},
+                              "compress":false}}}]}]}]}},
           "tabbable":true}]}},
   "masters":{
     "af737ca473c0437d9cddc90d295976e8":{
@@ -1724,79 +2840,119 @@
       "scriptId":"u8"},
     "f8e6de1a795f4cbd9ec10d8edb149955":{
       "scriptId":"u9"},
-    "98ae93fd913346119a5d7df37a636cdf":{
+    "2f1b31f5f41e43fabff1fd12f5ebab3e":{
       "scriptId":"u10"},
-    "3e0875363fac4ada936fa5ab13efec1c":{
+    "98ae93fd913346119a5d7df37a636cdf":{
       "scriptId":"u11"},
-    "b6efb61676f0472aba5a837716981f68":{
+    "3e0875363fac4ada936fa5ab13efec1c":{
       "scriptId":"u12"},
-    "16376964080f46a8bb0db3448450a0b4":{
+    "b78ee600503547318822510ece9e8715":{
       "scriptId":"u13"},
-    "1d69a1ba2e83451da8872171072e76af":{
+    "01217b15073f4dff99ad8e94e6c3dd3a":{
       "scriptId":"u14"},
-    "ff109dec4a4a45f29131b296f27de313":{
+    "5aeba0c911fa4e75876a919bb34a62b0":{
       "scriptId":"u15"},
-    "9b7f9107c3834fd3ab271c3bbb8c33cc":{
+    "14f6bd4825c74e788fc2464146c8682a":{
       "scriptId":"u16"},
-    "b0df78e3ee3047df8ac08936ccdf5a86":{
+    "3329059b250a4caa8abcf0bc1d1aa9e3":{
       "scriptId":"u17"},
-    "f4feaec72f764aae8c1e98f1e15e1633":{
+    "cf600e795bcb422d9134f91dfda60327":{
       "scriptId":"u18"},
-    "587b2798a19a4f40a55c30e7bc02425d":{
+    "66eea3476b70472a9a00c9f8468e1b65":{
       "scriptId":"u19"},
-    "c8a3b23d7ae2487a9b9fc14af06857a2":{
+    "2bb1c161397545e78cc592363bdc96f5":{
       "scriptId":"u20"},
-    "6702156305c24dbc80ee20cf667d31f0":{
+    "8d13135ea4a44b6bbf60f816c117ff61":{
       "scriptId":"u21"},
-    "500f7ec99cf34d82a08ca62b6288c723":{
+    "9a951208f0134e6287bc1111d6ae4283":{
       "scriptId":"u22"},
-    "ea996b384fe44b198d998a2fe155e4ac":{
+    "5385f36839264af4aa2021d86e801519":{
       "scriptId":"u23"},
-    "b9b0f94a6a0640619744f9ed29005ce6":{
+    "845eac243c094176bcb4b3df9b326b1a":{
       "scriptId":"u24"},
-    "ab7da5fa7e234b8eb1fecc590c242eef":{
+    "bc8c7e55ddcb451e807cd9f095d23e58":{
       "scriptId":"u25"},
-    "ed85f3b096224f15986afa6243082a1c":{
+    "ddff3178552d422e809bfaf06371db50":{
       "scriptId":"u26"},
-    "23ba64e7c7bc4448b43e7180873052bf":{
+    "4ad196b2ee8a43989255f77b2718e058":{
       "scriptId":"u27"},
-    "e8c2c73b252d4575989c42572f00038a":{
+    "36dc102dad714337b9eb05963f1413ec":{
       "scriptId":"u28"},
-    "b734bd35fc3c4600bd48cec46cc72f52":{
+    "84545e0237a64c6ab3370098a12ed1f3":{
       "scriptId":"u29"},
-    "3c0dbc98c92e4b0288af6ba2b4cb2721":{
+    "b6efb61676f0472aba5a837716981f68":{
       "scriptId":"u30"},
-    "b1e1ebce1d5b44009f5c63664e55cf24":{
+    "16376964080f46a8bb0db3448450a0b4":{
       "scriptId":"u31"},
-    "ff8d38c3aae04ba789f0dc8a61568a10":{
+    "1d69a1ba2e83451da8872171072e76af":{
       "scriptId":"u32"},
-    "60cdbdadade24e9a9cd79e6a2b748aee":{
+    "ff109dec4a4a45f29131b296f27de313":{
       "scriptId":"u33"},
-    "67987561b8224276ba74e02c6b653da0":{
+    "9b7f9107c3834fd3ab271c3bbb8c33cc":{
       "scriptId":"u34"},
-    "4d0bee01dee3436495b2d654ddaeeb41":{
+    "a68096eb00e743e09fbaa2989800b356":{
       "scriptId":"u35"},
-    "22aff46ef4b3447ca1c0f9eb05cac582":{
+    "823a90fba2904e61b6d7452f3d3c57c8":{
       "scriptId":"u36"},
-    "3d58ba12406e41e190228c8bd559d622":{
+    "e4cd049144d54271b1e562ab48f4b749":{
       "scriptId":"u37"},
-    "693ab464ba784e3aa4f183e78e111648":{
+    "516c76c4923a4aceb4cbb4ca102d7edc":{
       "scriptId":"u38"},
-    "c48d3858be1541d8b697bfaeb6092852":{
+    "b0df78e3ee3047df8ac08936ccdf5a86":{
       "scriptId":"u39"},
-    "e56d38bbb3db4cb39dcf85ca688791cb":{
+    "f4feaec72f764aae8c1e98f1e15e1633":{
       "scriptId":"u40"},
-    "d9169dc48456434990c9b62f2d372343":{
+    "587b2798a19a4f40a55c30e7bc02425d":{
       "scriptId":"u41"},
-    "dc66fcb9bfab4953b0c97a68ef5057ea":{
+    "c8a3b23d7ae2487a9b9fc14af06857a2":{
       "scriptId":"u42"},
-    "0ea64f69d9a0421a865a7a1873f8f9a2":{
+    "6702156305c24dbc80ee20cf667d31f0":{
       "scriptId":"u43"},
-    "eefb36ae909f4dc58f82eb8a0f6fbb84":{
+    "500f7ec99cf34d82a08ca62b6288c723":{
       "scriptId":"u44"},
-    "8f40046e69554691b4d3ffe2116eb434":{
+    "ea996b384fe44b198d998a2fe155e4ac":{
       "scriptId":"u45"},
-    "3e957e2d168f4d8481893d9b0c4c022c":{
+    "b9b0f94a6a0640619744f9ed29005ce6":{
       "scriptId":"u46"},
+    "e8c2c73b252d4575989c42572f00038a":{
+      "scriptId":"u47"},
+    "b734bd35fc3c4600bd48cec46cc72f52":{
+      "scriptId":"u48"},
+    "3c0dbc98c92e4b0288af6ba2b4cb2721":{
+      "scriptId":"u49"},
+    "b1e1ebce1d5b44009f5c63664e55cf24":{
+      "scriptId":"u50"},
+    "ff8d38c3aae04ba789f0dc8a61568a10":{
+      "scriptId":"u51"},
+    "60cdbdadade24e9a9cd79e6a2b748aee":{
+      "scriptId":"u52"},
+    "67987561b8224276ba74e02c6b653da0":{
+      "scriptId":"u53"},
+    "4d0bee01dee3436495b2d654ddaeeb41":{
+      "scriptId":"u54"},
+    "693ab464ba784e3aa4f183e78e111648":{
+      "scriptId":"u55"},
+    "c48d3858be1541d8b697bfaeb6092852":{
+      "scriptId":"u56"},
+    "e56d38bbb3db4cb39dcf85ca688791cb":{
+      "scriptId":"u57"},
+    "d9169dc48456434990c9b62f2d372343":{
+      "scriptId":"u58"},
+    "dc66fcb9bfab4953b0c97a68ef5057ea":{
+      "scriptId":"u59"},
+    "0ea64f69d9a0421a865a7a1873f8f9a2":{
+      "scriptId":"u60"},
+    "eefb36ae909f4dc58f82eb8a0f6fbb84":{
+      "scriptId":"u61"},
+    "8f40046e69554691b4d3ffe2116eb434":{
+      "scriptId":"u62"},
+    "3e957e2d168f4d8481893d9b0c4c022c":{
+      "scriptId":"u63"},
     "5846368403dd4672b0b882ee4e3a9158":{
-      "scriptId":"u47"}}});
+      "scriptId":"u64"},
+    "ef9d91d590a142fabdb2e3fcb55982da":{
+      "scriptId":"u65"},
+    "0c1bc24d1901403d8036663bfc2c0e1b":{
+      "scriptId":"u66"},
+    "09fd301d988c40b58836581393d1f5cf":{
+      "scriptId":"u67"}}});

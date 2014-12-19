@@ -19,15 +19,7 @@
         "children":[{
             "pageName":"Search Results",
             "type":"Wireframe",
-            "url":"search_results.html"},
-{
-            "pageName":"Page 2",
-            "type":"Wireframe",
-            "url":"page_2.html"},
-{
-            "pageName":"Page 3",
-            "type":"Wireframe",
-            "url":"page_3.html"}]}]},
+            "url":"search_results.html"}]}]},
   "globalVariables":{
     "onloadvariable":"",
     "newvariable":""},
