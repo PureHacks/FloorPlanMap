@@ -9,8 +9,8 @@ $(function(){
 	function employeeViewModel(data){
 		var self = this;
 
-		self.firstName = data.firstName;
-		self.lastName = data.lastName;
+		self.firstName = ko.observable(data.firstName);
+		self.lastName = ko.observable(data.lastName);
 		self.jobTitle = data.jobTitle;
 		self.phoneExtension = data.phoneExtension;
 		self.emailAddress = data.emailAddress;
@@ -18,7 +18,7 @@ $(function(){
 		self.slug = data.slug;
 
 		self.displayName = ko.computed(function(){
-			return self.firstName + " " + self.lastName;
+			return self.firstName() + " " + self.lastName();
 		});
 	};
 
@@ -51,12 +51,14 @@ $(function(){
 				data: $("form").serialize(),
 				success: function(data){
 					self.employeeList.push(new employeeViewModel(data));
+					self.flashMessage({type: "alert-success", message: "Employee Created"});
 					clearForm();
 				}
 			});
 		};
 
 		self.selectEmployee = function(){
+			self.flashMessage({});
 			self.selected(this);
 		};
 
@@ -72,10 +74,13 @@ $(function(){
 				type: 'DELETE',
 				success: function(data){
 					self.employeeList.remove(remove);
+					self.flashMessage({type: "alert-success", message: "Employee Deleted"});
 					clearForm();
 				}
 			});
 		};
+
+		self.flashMessage = ko.observable({});
 
 		self.updateEmployee = function(employee){
 			var update = employee.selected();
@@ -85,7 +90,7 @@ $(function(){
 				type: 'POST',
 				data: $("form").serialize(),
 				success: function(data){
-					
+					self.flashMessage({type: "alert-success", message: "Employee Updated"});
 				}
 			});
 		};
@@ -96,8 +101,8 @@ $(function(){
 		ko.applyBindings(viewModel);
 		viewModel.load();
 	});
-});
 
+});
 
 },{"jquery":2,"knockout":3}],2:[function(require,module,exports){
 (function (global){

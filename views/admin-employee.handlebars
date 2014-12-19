@@ -5,11 +5,15 @@
 			<div class="edit-employee panel panel-default">
 				<div class="panel-heading">Edit Employee Info</div>
 				<div class="panel-body">
-						<form role="form" action="/api/employee/{{employeeName.slug}}" method="POST" enctype="application/x-www-form-urlencoded">
+						<div class="alert fade in" data-bind="css: {'alert-success': flashMessage().type }, style: { 'display': flashMessage().type ? 'block' : 'none' }" style="display: none">
+							<button class="close" data-dismiss="alert">×</button>
+							<div data-bind="text: flashMessage().message"></div>
+						</div>
+						<form role="form" action="/api/employee/" method="POST" enctype="application/x-www-form-urlencoded">
 					
 						<div class="form-group">
 							<label for="first-name">Firstname</label>
-							<input type="text" class="form-control" id="first-name" name="firstName" data-bind="value: selected().firstName">
+							<input type="text" class="form-control" id="first-name" name="firstName" placeholder="Tim" data-bind="value: selected().firstName">
 						</div>
 						<div class="form-group">
 							<label for="last-name">Lastname</label>
@@ -25,7 +29,7 @@
 						</div>
 						<div class="form-group">
 							<label for="job-title">Job Title</label>
-							<input type="text" class="form-control" id="job-title" placeholder="CEO" name="jobTitle" data-bind="value: selected().jobTitle">
+							<input type="text" class="form-control" id="job-title" placeholder="Senior Interface Developer" name="jobTitle" data-bind="value: selected().jobTitle">
 						</div>
 						<div class="form-group">
 							<label for="clients">Clients</label>
