@@ -1,6 +1,6 @@
 ﻿$axure.loadCurrentPage({
   "url":"home.html",
-  "generationDate":new Date(1419006182338.02),
+  "generationDate":new Date(1419008310313.04),
   "isCanvasEnabled":false,
   "variables":["OnLoadVariable",
 "NewVariable"],
@@ -210,20 +210,105 @@
           "images":{
             "normal~":"images/home/u6.png"}},
 {
-          "id":"60736eadd4ab46ffa2b4f1ec7ab321fe",
+          "id":"2a1162dd04f24de6b2fcae8e24b3fa0e",
           "label":"",
-          "type":"imageMapRegion",
-          "styleType":"imageMapRegion",
+          "type":"textBox",
+          "styleType":"textBox",
           "visible":true,
           "style":{
+            "fontName":"'Arial-ItalicMT', 'Arial Italic', 'Arial'",
+            "fontSize":"18px",
+            "fontStyle":"italic",
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFF999999,
+              "opacity":1},
             "location":{
-              "x":300,
-              "y":300},
+              "x":299,
+              "y":298},
             "size":{
-              "width":560,
-              "height":70}},
+              "width":561,
+              "height":67}},
           "adaptiveStyles":{
 },
+          "interactionMap":{
+            "onFocus":{
+              "description":"OnFocus",
+              "cases":[{
+                  "description":"Case 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"setFunction",
+                      "description":"Set text on (Text Field) equal to &quot; &quot;",
+                      "expr":{
+                        "exprType":"block",
+                        "subExprs":[{
+                            "exprType":"fcall",
+                            "functionName":"SetWidgetFormText",
+                            "arguments":[{
+                                "exprType":"pathLiteral",
+                                "isThis":false,
+                                "isFocused":false,
+                                "isTarget":false,
+                                "value":["2a1162dd04f24de6b2fcae8e24b3fa0e"]},
+{
+                                "exprType":"stringLiteral",
+                                "value":" ",
+                                "stos":[]}]}]}}]}]}},
+          "tabbable":true},
+{
+          "id":"bf63b16ec0d7428d826701da3f814c5c",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "fontName":"'Arial-BoldMT', 'Arial Bold', 'Arial'",
+            "fontSize":"20px",
+            "fontWeight":"700",
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFFFFFFFF,
+              "opacity":1},
+            "fill":{
+              "fillType":"solid",
+              "color":0xFF33B353},
+            "location":{
+              "x":860,
+              "y":298},
+            "size":{
+              "width":147,
+              "height":67},
+            "cornerRadiusTopLeft":"5"},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"99eeedd01f8f48a182f6ed19aaa88540",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'Arial-BoldMT', 'Arial Bold', 'Arial'",
+                "fontSize":"20px",
+                "fontWeight":"700",
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFFFFFFFF,
+                  "opacity":1},
+                "fill":{
+                  "fillType":"solid",
+                  "color":0xFF33B353},
+                "location":{
+                  "x":860,
+                  "y":298},
+                "size":{
+                  "width":147,
+                  "height":67},
+                "cornerRadiusTopLeft":"5"},
+              "adaptiveStyles":{
+}}],
           "interactionMap":{
             "onClick":{
               "description":"OnClick",
@@ -231,22 +316,16 @@
                   "description":"Case 1",
                   "isNewIfGroup":false,
                   "actions":[{
-                      "action":"setPanelState",
-                      "description":"Set (Dynamic Panel) to Search-typed",
-                      "panelsToStates":[{
-                          "panelPath":["dedcfccc1b59419d8105fbb8b7f333f9"],
-                          "stateInfo":{
-                            "setStateType":"diagram",
-                            "stateNumber":2,
-                            "stateValue":{
-                              "exprType":"stringLiteral",
-                              "value":"1",
-                              "stos":[]},
-                            "loop":false,
-                            "showWhenSet":false,
-                            "options":{
-                              "compress":false}}}]}]}]}},
-          "tabbable":true}]}},
+                      "action":"linkWindow",
+                      "description":"Open Search Results in Current Window",
+                      "target":{
+                        "targetType":"page",
+                        "url":"search_results.html",
+                        "includeVariables":true},
+                      "linkType":"current"}]}]}},
+          "tabbable":true,
+          "images":{
+            "normal~":"images/home/u9.png"}}]}},
   "masters":{
 },
   "objectPaths":{
@@ -266,5 +345,9 @@
       "scriptId":"u6"},
     "c48fcc22381142439267e4bcd8b1e4f2":{
       "scriptId":"u7"},
-    "60736eadd4ab46ffa2b4f1ec7ab321fe":{
-      "scriptId":"u8"}}});
+    "2a1162dd04f24de6b2fcae8e24b3fa0e":{
+      "scriptId":"u8"},
+    "bf63b16ec0d7428d826701da3f814c5c":{
+      "scriptId":"u9"},
+    "99eeedd01f8f48a182f6ed19aaa88540":{
+      "scriptId":"u10"}}});

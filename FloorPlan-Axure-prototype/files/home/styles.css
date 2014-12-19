@@ -121,10 +121,48 @@
 }
 #u8 {
   position:absolute;
-  left:300px;
-  top:300px;
-  width:560px;
-  height:70px;
-  overflow:hidden;
-  background-image:url('../../resources/images/transparent.gif');
+  left:299px;
+  top:298px;
+  width:561px;
+  height:67px;
+}
+#u8_input {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:561px;
+  height:67px;
+  background-image:none;
+  font-family:'Arial-ItalicMT', 'Arial Italic', 'Arial';
+  font-weight:400;
+  font-style:italic;
+  font-size:18px;
+  text-decoration:none;
+  color:#999999;
+  text-align:left;
+}
+#u9 {
+  position:absolute;
+  left:860px;
+  top:298px;
+  width:147px;
+  height:67px;
+  font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';
+  font-weight:700;
+  font-size:20px;
+  color:#FFFFFF;
+}
+#u9_img {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:147px;
+  height:67px;
+}
+#u10 {
+  position:absolute;
+  left:2px;
+  top:22px;
+  width:143px;
+  word-wrap:break-word;
 }
