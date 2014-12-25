@@ -1,18 +1,73 @@
 <div class="seats-search container-fluid">
 	<div class="results-headers row">
-		<div class="results-label col-lg-3 col-md-3 col-sm-2 col-xs-12">
-			results count
+		<div class="results-label col-lg-4 col-md-4 col-sm-3 col-xs-12">
+			<h4>3 results for <span class="label label-default">Brian</span></h4>
 		</div>
-		<div class="results-filters col-lg-9 col-md-9 col-sm-10 col-xs-12">
-			filters
+		<div class="results-filters col-lg-8 col-md-8 col-sm-9 col-xs-12">
+			<div class="btn-group" data-toggle="buttons">
+				<label class="btn btn-success active">
+					<input type="checkbox" autocomplete="off" checked> Client Services
+				</label>
+			</div>
+			<div class="btn-group" data-toggle="buttons">
+				<label class="btn btn-success active">
+					<input type="checkbox" autocomplete="off" checked> Front End Development
+				</label>
+			</div>
 		</div>
 	</div><!-- /div.results-headers -->
 	<div class="results-mapping row">
-		<div class="results-list col-lg-3 col-md-3 col-sm-2 col-xs-12">
-			people list
+		<div class="results-list col-lg-4 col-md-4 col-sm-3 col-xs-12">
+			<div class="panel panel-default floor-9">
+				<div class="panel-heading">9th Floor</div>
+				<div class="list-group">
+					<a href="#" class="list-group-item list-group-item-success active">
+						<h4 class="list-group-item-heading">Brian Clarey</h4>
+						<p class="list-group-item-text">VP, Client Services</p>
+					</a>
+					<a href="#" class="list-group-item">
+						<h4 class="list-group-item-heading">Brian Wolk</h4>
+						<p class="list-group-item-text">Sr. Front End Developer</p>
+					</a>
+				</div>
+			</div>
+			<div class="panel panel-default floor-8">
+				<div class="panel-heading">8th Floor</div>
+				<div class="list-group">
+					<a href="#" class="list-group-item">
+						<h4 class="list-group-item-heading">Brian Elton</h4>
+						<p class="list-group-item-text">Front End Manager</p>
+					</a>
+				</div>
+			</div>
 		</div>
-		<div id="seating-map" class="col-lg-9 col-md-9 col-sm-10 col-xs-12">
+		<div id="seating-map" class="col-lg-8 col-md-8 col-sm-9 col-xs-12">
 			seat-map
 		</div>
 	</div><!-- /div.results-mapping -->
 </div>
+
+<script id="results-list-template" type="text/x-handlebars-template">
+	<div class="panel panel-default floor-9">
+		<div class="panel-heading">9th Floor</div>
+		<div class="list-group">
+			<a href="#" class="list-group-item list-group-item-success active">
+				<h4 class="list-group-item-heading">Brian Clarey</h4>
+				<p class="list-group-item-text">VP, Client Services</p>
+			</a>
+			<a href="#" class="list-group-item">
+				<h4 class="list-group-item-heading">Brian Wolk</h4>
+				<p class="list-group-item-text">Sr. Front End Developer</p>
+			</a>
+		</div>
+	</div>
+	<div class="panel panel-default floor-8">
+		<div class="panel-heading">8th Floor</div>
+		<div class="list-group">
+			<a href="#" class="list-group-item">
+				<h4 class="list-group-item-heading">Brian Elton</h4>
+				<p class="list-group-item-text">Front End Manager</p>
+			</a>
+		</div>
+	</div>
+</script>

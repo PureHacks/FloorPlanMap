@@ -6315,7 +6315,25 @@ img {
 #map-page .side-area {
   padding-top: 1.5%;
 }
+#map-page .results-headers {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#map-page .results-label h4,
+#map-page .results-label h5 {
+  text-align: right;
+}
+#map-page .results-filters {
+  padding-top: 3px;
+}
 #seating-map {
+  min-height: 550px;
+  border: 1px solid #ccc;
+}
+.seats-browse {
+  padding-top: 20px;
+}
+.seats-browse #seating-map {
   min-height: 600px;
 }
 #admin-page .brand {
